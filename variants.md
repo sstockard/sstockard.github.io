@@ -12,10 +12,10 @@ Some mutations are harmful and can cause diseases such as cancer. These are call
 
 4 databases were explored: 
 
-*ClinVar
-*DbSNP
-*LOVD
-*University of Utah BRCA1 Variant Database
+* ClinVar
+* DbSNP
+* LOVD
+* University of Utah BRCA1 Variant Database
 
 
 
