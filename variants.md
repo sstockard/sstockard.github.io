@@ -8,7 +8,7 @@ layout: default
 
 **Topic:** Cancer genomics
 
-**[Full code](/variants/variants.html)
+**[Full code](/variants/variants.html)**
 
 ## Background 
 
@@ -52,7 +52,7 @@ DpSNP is the largest variant database by far. But how are the clinical classific
 
 #### Distributions of Clinical Classifications Across Databases
 ![Distributions](variants/dist_pie.png "Distributions")
-###### See interactive version of this table in .rmd file (linked at top of page).
+###### See interactive version of this table in R markdown file (linked at top of page).
 
 Most varients ClinVar, DpSNP, and LOVD are classified as unknown, while most varients in Utah are a benign. 
 
