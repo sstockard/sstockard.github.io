@@ -24,5 +24,11 @@ GSEA requires very specific formatting parameters for input files. I needed to d
 
 ## Results
 
+#### Pathway Analysis Matrix
+![mat](/Pathway/matrix.png "mat")
+###### * indicates significant up or downregulation of that pathway based on enrichment score
+
+This is a heatmap of the enrichment scores of various gene sets. Higher enrichment scores indicate greater expression of genes in that biological pathway. These results show that Signatures 1 and 5 have very similar pathway expression, while Signatures 2, 3, and 4 and differ greatly. Although some signatures are similar, these results still support my hypothesis that CNSigs are associated with specific biological mechanisms. 
+
 
 
