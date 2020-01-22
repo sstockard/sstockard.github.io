@@ -2,16 +2,19 @@
 layout: default
 ---
 
-# Projects
+# Recent Projects
 
-  Welcome to my data science portfolio. Please navigate to the pages below to see individual projects. 
+My most recent work is genomic related, but uses analytical methods that can be applied to many fields. 
   
-  * [Descrepancies in Variant Databases for BRCA1 Mutations](./variants.md)
-  * Gene Set Enrichment Analysis for Copy Number Signatures
-  * Exploratory Shopping Trends
-  * Insights on Names in the United States
+* [Descrepancies in Variant Databases for BRCA1 Mutations](./variants.md)
+  
+* [Automating Pathway Analysis and Exploring Copy Number Signatures](./Pathway.md)
+  
+Some sales related analysis:
 
-# Skills
+* Exploratory Shopping Trends
+
+# Techincal Skills
 
 # Experience
 
