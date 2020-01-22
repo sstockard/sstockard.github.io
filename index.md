@@ -1,13 +1,15 @@
 ---
 layout: default
 ---
-# About Me
+# Portfolio
+
+## About Me
 
 I am a detail-oriented, motivated, and results-driven Research Data Analyst at The Ohio State University. My current research involves using computational methods to analyze large scale genomic data in breast cancer, applying analytical methods that are relevant to many fields.
 
 **Technical Skills:** I most commonly program in R, but am proficient in Python, C++, SQL, SPSS, and SAS.
 
-# Recent Projects
+## Recent Projects
   
 * [Descrepancies in Variant Databases for BRCA1 Mutations](./variants.md)
   
