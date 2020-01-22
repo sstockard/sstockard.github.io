@@ -22,7 +22,7 @@ While mutational signatures refer to single base variants in DNA, other types of
 
 GSEA requires very specific formatting parameters for input files. I had to peform hundreds of GSEA analyses, so manual generation of the files was time consuming and tedius. I developed a pipeline that automates the process given an expression dataset.This process is specifically for CNSig analysis and also outputs a heatmap of the results once the analysis is complete.
 
-[Pipeline Code](Pathway/Pipeline.R)
+[View Pipeline Code](https://github.com/sstockard/sstockard.github.io/blob/master/Pathway/Pipeline.R)
 
 ## Pathway Analysis results
 
@@ -35,19 +35,19 @@ This is a heatmap of the enrichment scores of various gene sets. Higher enrichme
 ## Other Clinical Results
 
 #### Signature Exposures Across Breast Cancer Samples
-[View Code](Pathway/exposures.R)
+[View Code](https://github.com/sstockard/sstockard.github.io/blob/master/Pathway/exposures.R)
 ![ex](/Pathway/exposures.png "ex")
 
 This plot shows CNSig exposure across 700+ breast cancer samples. CNSig exposure is on the y-axis and tumor samples on the x-axis. Most samples are exposed to multiple CNSigs and CNSigs are fairly evenly distributed across samples.
 
 #### Signature Survival Curves
-[View Code](Pathway/survival.R)
+[View Code](https://github.com/sstockard/sstockard.github.io/blob/master/Pathway/survival.R)
 ![surv](/Pathway/survival.png "surv")
 
 Low quality survival data, so difficult to interpret. However it seems that Signatures 2 and 4 are associated with the worst patient survival.
 
 #### Breast Cancer Subtype Association with Signatures
-[View Code](Pathway/radar.R)
+[View Code](https://github.com/sstockard/sstockard.github.io/blob/master/Pathway/radar.R)
 ![sub](/Pathway/subtype.png "sub")
 
 ## Impacts
