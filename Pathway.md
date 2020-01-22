@@ -8,6 +8,8 @@ layout: default
 
 **Software:** GSEA
 
+**Codes linked below**
+
 ## Background
 
 **DNA and mutations:** Deoxyribonucleic acid (DNA) is often called the "blueprint of life," as it is the template for protein synthesis in the body. DNA is found in cells, and must be copied when cells replicate. However, sometimes mistakes occur during this process, resulting in [DNA mutations](/variants.md). While some mutations can be random, [recent evidence](/variants.md) suggests that many times mutations occur according to particular patterns. Different enviornmental conditions and diseases are associated with specific patterns of mutations. These patterns are called _mutational signatures_. For example, one mutational signature is related to cigarette smoking and many cancer types have corresponding mutational signatures.
@@ -32,12 +34,28 @@ This is a heatmap of the enrichment scores of various gene sets. Higher enrichme
 
 ## Other Clinical Results
 
+#### Signature Exposures Across Breast Cancer Samples
 ![ex](/Pathway/exposures.png "ex")
 
-This plot shows CNSig exposure across 700+ breast cancer samples. Signature exposure is on the y-axis and tumor samples on the x-axis. Most samples are exposed to multiple signatures and signatures are fairly evenly distributed across samples.
+This plot shows CNSig exposure across 700+ breast cancer samples. CNSig exposure is on the y-axis and tumor samples on the x-axis. Most samples are exposed to multiple CNSigs and CNSigs are fairly evenly distributed across samples.
 
+#### Signature Survival Curves
 ![surv](/Pathway/survival.png "surv")
 
 Low quality survival data, so difficult to interpret. However it seems that Signatures 2 and 4 are associated with the worst patient survival.
 
+#### Breast Cancer Subtype Association with Signatures
+![sub](/Pathway/subtype.png "sub")
 
+## Impacts
+
+**Clinical:**  Because CNSigs can be detected in tumor samples and are related to patient outcomes, CNSigs can act as a way to guide cancer patient treatment. This is important as inappropriate cancer therapies can be harmful to patients' health and survival.
+
+**Business:**  Big data analysis and visualization is critical in any business setting. This project has greatly guided my computational, statistical, and analytical skills. In addition, automation and effecient pipeline development are important in a time sensitive, fast-paced enviornment. 
+
+## Conclusions
+
+* I was able to successful automate a pipeline for GSEA input files for CNSig Analysis.
+* Pathway analysis suggests CNSigs are related to underlying biological mechanisms.
+* Breast cancer patients are exposed to multiple CNSigs.
+* CNSigs are related to breast cancer survival and subtype.
