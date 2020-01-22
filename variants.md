@@ -46,8 +46,8 @@ BRCA1 is a gene commonly mutated in cancer. It is made up of many bases, so ther
 First, let's see what the data looks like. 
 
 ### Distributions of Clinical Classifications Across Databases
-![Distributions](/chart.png "Distributions")
-###### See .rmd file (linked at top of page) for code.
+![Distributions](/variants/chart.png "Distributions")
+###### See interactive version in .rmd file (linked at top of page).
 
 
 
