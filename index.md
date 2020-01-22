@@ -19,6 +19,6 @@ I am a detail-oriented, motivated, and results-driven Research Data Analyst at T
 
 ## Assignments
 
-* [Class Comparison of Prostate Genomic Data](./HW3.html)
+* [Class Comparison of Prostate Genomic Data](./assignments/HW3.html)
 
 Please feel free to contact me with questions: sinclairstockard[at]gmail.com
