@@ -18,7 +18,7 @@ Some mutations are harmful and can cause diseases such as cancer. These are call
 
 ## The Dataset
 
-BRCA1 is a gene commonly mutated in cancer. It is made up of many bases, so there are many different opportunity for mutations. 
+BRCA1 is a gene commonly mutated in cancer. It is made up of many bases, so there are many opportunities for mutations. 
 
 4 BRCA1 mutant databases were explored: 
 
@@ -39,34 +39,7 @@ Clinical classifications of variants:
 
 First, let's see what the data looks like. 
 
-```R
-setwd('/variants')
-
-list.files()
-
-clinvar = as.data.frame(read.csv('ClinVar.csv', header=T, check.names = FALSE))
-head(clinvar)
-
-table(clinvar$clinicalSignificanceClinVar)
-
-dpsnp = as.data.frame(read.delim('dbSNP.tsv', header=T, check.names = FALSE))
-head(dpsnp)
-
-table(dpsnp$clinicalSignificanceDbSNP)
-
-lovd = as.data.frame(read.delim('LOVD.tsv', header=T, check.names = FALSE))
-head(lovd)
-
-table(lovd$clinicalSignificanceLOVD)
-
-utah = as.data.frame(read.delim('Utah.tsv', header=T, check.names = FALSE))
-head(utah)
-
-table(utah$clinicalSignificanceUtah)
-
-
-```
-
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 
 
