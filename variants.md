@@ -41,15 +41,58 @@ BRCA1 is a gene commonly mutated in cancer. It is made up of many bases, so ther
 * Likely Benign 
 * Unknown significance 
 
-# Query the databases
+## First look: query the databases
 
 First, let's see what the data looks like. 
 
-### Distributions of Clinical Classifications Across Databases
-![Distributions](/variants/dist_pie.png "Distributions")
-###### See interactive version in .rmd file (linked at top of page).
+#### Raw Counts of Clinical Classifications Across Databases
+![Counts](variants/overall.png "Distributions")
+
+DpSNP is the largest variant database by far. But how are the clinical classifications distributed?
+
+#### Distributions of Clinical Classifications Across Databases
+![Distributions](variants/dist_pie.png "Distributions")
+###### See interactive version of this table in .rmd file (linked at top of page).
 
 Most varients ClinVar, DpSNP, and LOVD are classified as unknown, while most varients in Utah are a benign. 
+
+## Variant overlap across databases
+
+By looking at the [merged variant database](/variants/Merged.txt), you can see that there are a lot of missing values. 
+
+If we want to compare variant classifications across databases, we have to determine which variants are present in multiple databases. Here, we will say we are interested variants that 3 out of 4 of the databases. 
+
+One way to do this is to set NA values to 0, and variant call values to 1. Since the mutation names are rows and the databases are columns, a row sum of 3 or above means that the variant is present in at least 3 databases.
+
+```{r}
+mergedz <- read.csv("Merged.txt", 
+  header=FALSE, skip = 1, 
+  col.names = c("protVar", "Utah", "DbSNP", "LOVD", "ClinVar"), 
+  sep='\t', stringsAsFactors = FALSE)
+
+# set NA's = 0
+mergedz[is.na(mergedz)] <- 0
+
+#set calls to = 1
+mergedz[mergedz == 'Benign'] <- 1 
+mergedz[mergedz == 'Likely benign'] <- 1 
+mergedz[mergedz == 'Likely Pathogenic'] <- 1 
+mergedz[mergedz == 'Pathogenic'] <- 1 
+mergedz[mergedz == 'Uncertain significance'] <- 1 
+
+# get row sums
+mergedz$sum <- rowSums(mergedz[,2:5])
+
+```
+There are the variants that exist across at least 3 databases. This is a very small number compared to the total number of variants we started with (over 3800), which shows how little is known about the effects of specific BRCA1 variants. 
+
+#### Variants Present in at Least 3 Databases
+![Calls](variants/callstab.png "Calls")
+
+For the variants found in at least 3 databases, are they called similarly across databases?
+
+
+
 
 
 
