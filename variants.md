@@ -39,7 +39,7 @@ BRCA1 is a gene commonly mutated in cancer. It is made up of many bases, so ther
 * Likely Pathogenic
 * Benign
 * Likely Benign 
-* Unknown significance 
+* Unknown significance- This means experimental data exists on the variant, but results are mixed. It is NOT the same as an NA value.
 
 ## First look: query the databases
 
@@ -86,15 +86,20 @@ mergedz$sum <- rowSums(mergedz[,2:5])
 ```
 There are the variants that exist across at least 3 databases. This is a very small number compared to the total number of variants we started with (over 3800), which shows how little is known about the effects of specific BRCA1 variants. 
 
-#### Variants Present in at Least 3 Databases
+#### Names of Variants Found in at Least 3 Databases
 ![Calls](variants/callstab.png "Calls")
 
 For the variants found in at least 3 databases, are they called similarly across databases?
 
+#### Clinical Classifications of Variants Found in at Least 3 Databases
+![Calls](variants/plot.png "Calls")
 
+It is easy to see in this plot that there is very little agreement among variant calls across databases.
 
+## Conclusions
 
-
-
+* There are very few common variants across databases that have clinical calls
+* Among those with clinical calls, there is little agreement among databases
+* More experimental and computational work needs to be done to accurately classify BRCA1 mutations 
 
 
