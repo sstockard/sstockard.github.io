@@ -9,10 +9,16 @@ I am a detail-oriented, motivated, and results-driven Research Data Analyst at T
 
 **Technical Skills:** I most commonly program in R, but am proficient in Python, C++, SQL, SPSS, and SAS.
 
+**Relevant Coursework:** Introduction to Bioinformatics, Analysis of  Large-Scale Genomic Data, Introduction to C++, SQL Fundamentals, Research and Problem Solving, Fundamentals of Grant Writing.
+
 ## Recent Projects
   
 * [Descrepancies in Variant Databases for BRCA1 Mutations](./variants.md)
   
 * [Automating Pathway Analysis and Exploring Copy Number Signatures](./Pathway.md)
+
+## Assignments
+
+* [Class Comparison of Prostate Genomic Data](./HW3.html)
 
 Please feel free to contact me with questions: sinclairstockard[at]gmail.com
