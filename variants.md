@@ -8,7 +8,7 @@ layout: default
 
 **Topic:** Cancer genomics
 
-**Full analysis code:** 
+**[Full code](/variants/variants.html)
 
 ## Background 
 
