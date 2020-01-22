@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Auotmating Pathway Analysis and  Exploring Copy Number Signatures
+# Automating Pathway Analysis and  Exploring Copy Number Signatures
 
 **Language:** R
 
