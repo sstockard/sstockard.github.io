@@ -51,6 +51,7 @@ Low quality survival data, so difficult to interpret. However it seems that Sign
 
 ![sub](/Pathway/subtype.png "sub")
 
+This radar plot illustrates the associations of CNSigs with 3 different breast cancer subtypes. Signatures S4 and S4 and associated with ER+ breast cancers and S1 and S2 are slightly more common in TNBC. 
 ## Impacts
 
 **Clinical:**  Because CNSigs can be detected in tumor samples and are related to patient outcomes, CNSigs can act as a way to guide cancer patient treatment. This is important as inappropriate cancer therapies can be harmful to patients' health and survival.
