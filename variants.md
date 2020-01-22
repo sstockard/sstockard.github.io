@@ -12,19 +12,13 @@ layout: default
 
 ## Background 
 
-Deoxyribonucleic acid, more commonly known as DNA, is the blueprint for all life on Earth. DNA is found in cells and determines the characteristics that make every person unique. For simplicity, we can think of DNA as long strands of molecules called _bases_. There are four bases: G, T, C, and A. Normally, cells replicate and copy their DNA accurately. But sometimes there are mistakes. These mistakes are called _mutations_.
+Deoxyribonucleic acid, more commonly known as DNA, is the blueprint for all life on Earth. DNA is found in cells and determines the characteristics that make every person unique. For simplicity, we can think of DNA as long strands of molecules called _bases_. There are four bases: G, T, C, and A. Normally, cells replicate and copy their DNA accurately. But sometimes there are mistakes. These mistakes are called _mutations_ or _variants_.
 
 Some mutations are harmful and can cause diseases such as cancer. These are called _pathogenic mutations_. However, other mutations are harmless and have no negative effects. These are called _benign mutations_. It is now possible to recieve a DNA test from a doctor to screen for mutations that may impact health. Databases exist that classify mutations as pathogenic, benign, or unknown based on results of laboratory experiments. But do these databases agree? 
 
-## Impacts
-
-**Clinical:** If a BRCA1 mutation is found during a genetic screening of a patient, patients are faced with anxiety and the decision to take preventative measures. For breast cancer, this could mean undergoing a masectamy to reduce the chances of developing a breast tumor. However, such consequences should only occur in the case of a pathogenic mutation. For this reason, it is important that databases that classify genomic mutations are accurate as possible.
-
-**Business:** The ability to merge, cross-validate, and visualize findings across datasets is a valuable tool in a business setting.
-
 ## The Dataset
 
-BRCA1 is a gene commonly mutated in cancer. It is made up of many bases, so there are many opportunities for mutations. 
+BRCA1 is a gene commonly mutated in breast cancer. It is made up of many bases, so there are many opportunities for mutations. 
 
 **4 BRCA1 mutant databases were explored:** 
 
@@ -41,6 +35,12 @@ BRCA1 is a gene commonly mutated in cancer. It is made up of many bases, so ther
 * Likely Benign 
 * Unknown significance- This means experimental data exists on the variant, but results are mixed. It is NOT the same as an NA value.
 
+## Impacts
+
+**Clinical:** If a BRCA1 mutation is found during a genetic screening of a patient, patients are faced with anxiety and the decision to take preventative measures. For breast cancer, this could mean undergoing a masectamy to reduce the chances of developing a breast tumor. However, such extreme consequences should only occur in the case of a _pathogenic mutation_. For this reason, it is important that genomic variant databases are accurate as possible so patients can make the most informed decision for their health.
+
+**Business:** The ability to merge, cross-validate, and visualize findings across datasets is a valuable tool in a business setting.
+
 ## First look: query the databases
 
 First, let's see what the data looks like. 
@@ -54,16 +54,17 @@ DpSNP is the largest variant database by far. But how are the clinical classific
 ![Distributions](variants/dist_pie.png "Distributions")
 ###### See interactive version of this table in R markdown file (linked at top of page).
 
-Most varients ClinVar, DpSNP, and LOVD are classified as unknown, while most varients in Utah are a benign. 
+Most of the varients in the ClinVar, DpSNP, and LOVD databases are classified as unknown. By contrast, a majority of the variants in the Utah database are classified as benign. 
 
 ## Variant overlap across databases
 
-By looking at the [merged variant database](/variants/Merged.txt), you can see that there are a lot of missing values. 
+By looking at the [merged variant database](/variants/Merged.txt), one can see that there are hundreds of missing values (i.e. "NA"). A missing value in a column means that there is no experimental data for that variant in that particular database. 
 
-If we want to compare variant classifications across databases, we have to determine which variants are present in multiple databases. Here, we will say we are interested variants that 3 out of 4 of the databases. 
+If we want to compare variant classifications across databases, we have to determine which variants are present in multiple databases. Here, we will say that we are interested variants that 3 out of 4 of the databases. 
 
 One way to do this is to set NA values to 0, and variant call values to 1. Since the mutation names are rows and the databases are columns, a row sum of 3 or above means that the variant is present in at least 3 databases.
 
+#### Example:
 ```{r}
 mergedz <- read.csv("Merged.txt", 
   header=FALSE, skip = 1, 
@@ -84,22 +85,22 @@ mergedz[mergedz == 'Uncertain significance'] <- 1
 mergedz$sum <- rowSums(mergedz[,2:5])
 
 ```
-There are the variants that exist across at least 3 databases. This is a very small number compared to the total number of variants we started with (over 3800), which shows how little is known about the effects of specific BRCA1 variants. 
+These are the variants that exist across at least 3 databases. There are only 29! This is a very small number compared to the total number of variants we started with (over 3800), which shows how little is known about the effects of specific BRCA1 variants. 
 
 #### Names of Variants Found in at Least 3 Databases
 ![Calls](variants/callstab.png "Calls")
 
-For the variants found in at least 3 databases, are they called similarly across databases?
+For the variants found in at least 3 databases, are they classified similarly across databases?
 
 #### Clinical Classifications of Variants Found in at Least 3 Databases
 ![Calls](variants/plot.png "Calls")
 
-It is easy to see in this plot that there is very little agreement among variant calls across databases.
+It is easy to see in this plot that there is very little agreement among variant calls across databases, suggesting uncertanity in the field about the health implications of specific BRCA1 mutations. 
 
 ## Conclusions
 
-* There are very few common variants across databases that have clinical calls
-* Among those with clinical calls, there is little agreement among databases
-* More experimental and computational work needs to be done to accurately classify BRCA1 mutations 
+* There are very few common variants across databases that have clinical calls.
+* Among those with clinical calls, there is little agreement among databases.
+* Lack of consistancy and availability of BRCA1 variant data could have negative impacts on patient care, so more experimental and computational work needs to be done to accurately classify BRCA1 mutations.
 
 
