@@ -1,0 +1,5 @@
+library(ggplot2)
+library(ggfortify)
+library(survival)
+fit <- survfit(Surv(t.event, e.event) ~ Call, data = V3)
+autoplot(fit,censor=FALSE,conf.int=FALSE,surv.size = 1.4) + theme_grey()
