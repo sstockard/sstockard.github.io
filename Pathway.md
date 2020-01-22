@@ -18,7 +18,7 @@ While mutational signatures refer to single base variants in DNA, other types of
 
 ## Automatic generation of GSEA input files
 
-GSEA requires very specific formatting parameters for input files. I needed to do hundreds of GSEA analyses, so manual generation of these files and visualizations was time consuming and tedius. I developed a pipeline that automates the process given an expression dataset.This process is specifically for copy number signature analysis.
+GSEA requires very specific formatting parameters for input files. I needed to do hundreds of GSEA analyses, so manual generation of these files and visualizations was time consuming and tedius. I developed a pipeline that automates the process given an expression dataset.This process is specifically for CNSig analysis.
 
 [View Pipeline Code](Pathway/Pipeline.R)
 
