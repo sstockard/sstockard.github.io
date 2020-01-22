@@ -14,7 +14,7 @@ layout: default
 
 While mutational signatures refer to single base variants in DNA, other types of mutations exist. One of these types of mutations is called _copy number variations_. This term is used to describe mutations where there is an abnormal number of copies of a gene. My recent work has focused on _copy number signatures_, or patterns of copy number variations. For simplicity, I will refer to copy number signatures as CNSigs.
 
-**Pathway analysis:** My hypothesis is that CNSigs are related to underlying biological processes. One way to test this is via pathway analysis. A pathway analysis uses expression of predefined gene sets to biological mechanisms to phenotypic outcomes. Gene Set Enrichment Analysis (GSEA) is Java tool used to carryout pathway analysis.
+**Pathway analysis:** My hypothesis is that CNSigs are related to underlying biological processes. One way to test this is via pathway analysis. A pathway analysis uses expression of predefined gene sets to relate biological mechanisms to phenotypic outcomes. Gene Set Enrichment Analysis (GSEA) is Java tool used to carryout pathway analysis.
 
 ## Automatic generation of GSEA input files
 
