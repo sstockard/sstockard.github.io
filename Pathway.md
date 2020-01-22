@@ -41,6 +41,7 @@ This is a heatmap of the enrichment scores of various gene sets. Higher enrichme
 This plot shows CNSig exposure across 700+ breast cancer samples. CNSig exposure is on the y-axis and tumor samples on the x-axis. Most samples are exposed to multiple CNSigs and CNSigs are fairly evenly distributed across samples.
 
 #### Signature Survival Curves
+[View Code](Pathway/survival.R)
 ![surv](/Pathway/survival.png "surv")
 
 Low quality survival data, so difficult to interpret. However it seems that Signatures 2 and 4 are associated with the worst patient survival.
