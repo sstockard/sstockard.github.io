@@ -1,0 +1,216 @@
+---
+title: "Variants"
+author: "Sinclair Stockard"
+date: "January 21, 2020"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Discrepancies in Variant Databases for BRCA1 Mutations
+
+### Background 
+
+Deoxyribonucleic acid, more commonly known as DNA, is the blueprint for all life on Earth. DNA is found in cells and determines the characteristics that make every person unique. For simplicity, we can think of DNA as long strands of molecules called _bases_. There are four bases: G, T, C, and A. Normally, cells replicate and copy their DNA accurately. But sometimes there are mistakes. These mistakes are called _mutations_.
+
+Some mutations are harmful and can cause diseases such as cancer. These are called _malignant mutations_. However, other mutations are harmless and have no negative effects. These are called _benign mutations_. It is now possible to recieve a DNA test from a doctor to screen for mutations that may impact health. Databases exist that classify mutations as malignant, benign, or unknown based on results of laboratory experiments. But do these databases agree? 
+
+### 1. Import databases and query for clinical classifications.
+
+```{r}
+setwd('/Users/sincl/OneDrive/Desktop/Personal/GitPages/Variants')
+
+list.files()
+
+```
+
+
+**Clinvar:**
+
+
+```{r}
+
+clinvar = as.data.frame(read.csv('ClinVar.csv', header=T, check.names = FALSE))
+head(clinvar)
+
+table(clinvar$clinicalSignificanceClinVar)
+
+```
+
+
+**DbSNP:**
+
+
+```{r}
+
+dpsnp = as.data.frame(read.delim('dbSNP.tsv', header=T, check.names = FALSE))
+head(dpsnp)
+
+table(dpsnp$clinicalSignificanceDbSNP)
+
+```
+
+**LOVD:**
+
+```{r}
+
+lovd = as.data.frame(read.delim('LOVD.tsv', header=T, check.names = FALSE))
+head(lovd)
+
+table(lovd$clinicalSignificanceLOVD)
+
+```
+
+**Utah:**
+
+```{r}
+utah = as.data.frame(read.delim('Utah.tsv', header=T, check.names = FALSE))
+head(utah)
+
+table(utah$clinicalSignificanceUtah)
+
+```
+
+### 2. Create table of all raw counts of classifications across databases
+
+```{r}
+
+ctable <- table(clinvar$clinicalSignificanceClinVar)
+dtable <- table(dpsnp$clinicalSignificanceDbSNP)
+lotable <- table(lovd$clinicalSignificanceLOVD)
+utable <- table(utah$clinicalSignificanceUtah)
+
+class <- c('Benign','Likely Benign','Likely Pathogenic','Pathogenic','Uncertain Significance','Total')
+
+alltable <- as.data.frame(cbind(ctable,dtable,lotable,utable), row.names= FALSE)
+alltable <- as.data.frame(rbind(alltable,as.numeric(colSums(alltable))))
+x <- as.data.frame(cbind(class,alltable))
+
+colnames(x) <- c('Classification','ClinVar','DpSNP','LOVD','Utah')
+
+library(dplyr)
+
+library(data.table)
+
+library(dplyr)
+
+library(formattable)
+
+library(tidyr)
+
+library(sparkline)
+
+tab = as.htmlwidget(formattable(x,align = c("l",rep("c", NCOL(x) - 1)), list(
+    "Classification" = formatter("span", style = ~ style(color = "grey",font.weight = "bold")), area(col=2:5,row=6) ~ color_bar("#ff7f7f"))))
+tab$dependencies = c(tab$dependencies, htmlwidgets:::widget_dependencies("sparkline", "sparkline"))
+
+tab
+
+```
+
+### 3. Create distribution table
+
+```{r}
+
+library(dplyr)
+
+tablepercent <- x %>%
+  mutate_at(vars(-Classification), funs(./sum(.)))
+
+tablepercent <- tablepercent %>% 
+  mutate_if(is.numeric, round, digits = 3)
+
+colnames(tablepercent) <- c('Classification','ClinVar','DpSNP','LOVD','Utah')
+
+tablepercent$Classification <- lapply(tablepercent$Classification,as.character)
+
+clinp <- tablepercent[,2]
+dbp <- tablepercent[,3]
+lp <- tablepercent[,4]
+utahp <- tablepercent[,5]
+
+tablepercent[6,] <- c("Distribution","0","0","0","0")
+
+tablepercent[6,] <- c("", 
+  as.character(htmltools::as.tags(sparkline(clinp, type = "pie"))), 
+  as.character(htmltools::as.tags(sparkline(dbp, type = "pie"))), 
+  as.character(htmltools::as.tags(sparkline(lp, type = "pie"))),
+  as.character(htmltools::as.tags(sparkline(utahp, type = "pie"))))
+colortab = as.htmlwidget(formattable(tablepercent, align = c("l",rep("c", NCOL(tablepercent) - 1)), list(
+    "Classification" = formatter("span", style = ~ style(color = "grey",font.weight = "bold")), 
+    area(col=2:5,row=1:5) ~ color_tile("thistle1","plum4"))))
+colortab$dependencies = c(colortab$dependencies, htmlwidgets:::widget_dependencies("sparkline", "sparkline"))
+colortab
+    
+```
+
+### 4. Isolate variants present in 3+ databases
+
+```{r}
+
+mergedz <- read.csv("Merged.txt", header=FALSE, skip = 1, col.names = c("protVar", "Utah", "DbSNP", "LOVD", "ClinVar"), sep='\t', stringsAsFactors = FALSE)
+
+# set NA's = 0
+mergedz[is.na(mergedz)] <- as.numeric(0)
+
+# set calls to = 1
+mergedz[mergedz == 'Benign'] <- as.numeric(1) 
+mergedz[mergedz == 'Likely benign'] <- as.numeric(1)  
+mergedz[mergedz == 'Likely pathogenic'] <- as.numeric(1) 
+mergedz[mergedz == 'Pathogenic'] <- as.numeric(1)  
+mergedz[mergedz == 'Uncertain significance'] <- as.numeric(1) 
+
+# get row sums
+mergedz$ClinVar <- as.numeric(mergedz$ClinVar)
+mergedz$LOVD <- as.numeric(mergedz$LOVD)
+mergedz$DbSNP <- as.numeric(mergedz$DbSNP)
+mergedz$Utah <- as.numeric(mergedz$Utah)
+mergedz$sum <- rowSums(mergedz[,2:5])
+
+
+# variants that have at least three calls
+calls3 <- mergedz[mergedz$sum >=3,1:5]
+calls3 <- as.data.frame(calls3, rownames = FALSE)
+
+callstab = as.htmlwidget(formattable(calls3,align = c("l",rep("c", NCOL(calls3) - 1)), list(
+    "Classification" = formatter("span", style = ~ style(color = "grey",font.weight = "bold")) )))
+callstab$dependencies = c(callstab$dependencies, htmlwidgets:::widget_dependencies("sparkline", "sparkline"))
+
+callstab
+
+```
+
+
+## 5. Plot variants present in all 3 databases
+
+```{r}
+
+#import table again without numeric values
+mergedz <- read.csv("Merged.txt", header=FALSE, skip = 1, col.names = c("protVar", "Utah", "DbSNP", "LOVD", "ClinVar"), sep='\t', stringsAsFactors = FALSE)
+
+#subset merged
+muts <- calls3$protVar
+rownames(mergedz) <- mergedz$protVar
+
+subset <- mergedz[muts,1:5]
+
+library (ggplot2)
+library (reshape2)
+
+melt <- melt(subset, id.vars="protVar", value.name="value", variable.name="database")
+melt2 <- (na.omit(melt))
+
+plot <- ggplot(data= melt2, aes(x=protVar, y=value, group = database, colour = database)) +
+  geom_point(size=3, position=position_jitter(h=0.15,w=0.15))+ 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))+
+  scale_y_discrete() +
+  ggtitle("Significance of variants present in 3+ databases") +
+  xlab("Variants") +
+  ylab("Classification")
+
+plot
+```
