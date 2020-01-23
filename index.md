@@ -17,7 +17,7 @@ Please feel free to contact me with questions: sinclairstockard[at]gmail.com or 
   
 * [Automating Pathway Analysis and Exploring Copy Number Signatures](./Pathway.md)
 
-* [Descrepancies in Variant Databases for BRCA1 Mutations](./variants.md)
+* [Discrepancies in Variant Databases for BRCA1 Mutations](./variants.md)
 
 ## Assignments
 
