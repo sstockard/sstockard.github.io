@@ -30,5 +30,4 @@ Please feel free to contact me with questions: sinclairstockard[at]gmail.com or 
 ## Links
 
 * [Machine Learning Predicts Rapid Relapse of Triple Negative Breast Cancer](https://www.biorxiv.org/content/10.1101/613604v1)
-* [Our Lab Git](https://gitlab.com/stoverlab)
 
