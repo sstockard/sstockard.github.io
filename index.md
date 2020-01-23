@@ -25,7 +25,7 @@ Please feel free to contact me with questions: sinclairstockard[at]gmail.com or 
 
 ## Other Visualizations
 
-* [Exploratory Retail Insights](./shopp/ing.md)
+* [Exploratory Retail Insights](./shopping.md)
 
 ## Links
 
