@@ -19,7 +19,7 @@ write.table(x, file='TCGA_clin_exposures.txt', sep='\t', row.names=F)
 
 ###
 
-##VISUAL##
+##SURVIVAL##
 
 library(ggplot2)
 library(ggfortify)
