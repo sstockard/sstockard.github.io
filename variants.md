@@ -6,7 +6,7 @@ layout: default
 
 **Language:** R
 
-**Concepts:** Genomics, data manipulation, merging data sources, querying, visualization
+**Concepts:** Genomics, data manipulation, merging data sources, database querying, visualization
 
 **[Full code](/variants/variants.html)**
 
