@@ -19,7 +19,7 @@ Please feel free to contact me with questions: sinclairstockard[at]gmail.com or 
   
 * [Automating Pathway Analysis and Exploring Copy Number Signatures](./Pathway.md)
 
-* [Machine learning predicts rapid relapse of triple negative breast cancer](https://www.biorxiv.org/content/10.1101/613604v1)
+* [Machine Learning Predicts Rapid Relapse of Triple Negative Breast Cancer](https://www.biorxiv.org/content/10.1101/613604v1)
 
 ## Assignments
 
