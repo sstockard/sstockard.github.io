@@ -95,7 +95,7 @@ For the variants found in at least 3 databases, are they classified similarly ac
 #### Clinical Classifications of Variants Found in at Least 3 Databases
 ![Calls](variants/plot.png "Calls")
 
-It is easy to see in this plot that there is very little agreement among variant calls across databases, suggesting uncertanity in the field about the health implications of specific BRCA1 mutations. 
+This plot shows that there is fairly good agreement among variant calls across databases, but still some discrepancies and many unknown variants in some databases. This suggests that while variant calling databases can be a good resource, uncertanity in the field about the health implications of specific BRCA1 mutations. Especially given the small amount of variants that are available in multiple databases.
 
 ## Conclusions
 
