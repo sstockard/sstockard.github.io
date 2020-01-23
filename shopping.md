@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Exploratory Shopping Insights
+# Exploratory Retail Insights
 
 Data: 
 * [Store Features](./shopping/features-data-set.csv)
