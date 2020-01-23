@@ -19,8 +19,6 @@ Please feel free to contact me with questions: sinclairstockard[at]gmail.com or 
   
 * [Automating Pathway Analysis and Exploring Copy Number Signatures](./Pathway.md)
 
-* [Machine Learning Predicts Rapid Relapse of Triple Negative Breast Cancer](https://www.biorxiv.org/content/10.1101/613604v1)
-
 ## Assignments
 
 * [Class Comparison of Prostate Genomic Data](./assignments/HW3.html)
@@ -28,4 +26,9 @@ Please feel free to contact me with questions: sinclairstockard[at]gmail.com or 
 ## Other Visualizations
 
 * [Exploratory Retail Insights](./shopping.md)
+
+## Links
+
+* [Machine Learning Predicts Rapid Relapse of Triple Negative Breast Cancer](https://www.biorxiv.org/content/10.1101/613604v1)
+* [Our Lab](https://gitlab.com/stoverlab)
 
