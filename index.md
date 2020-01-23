@@ -15,9 +15,9 @@ Please feel free to contact me with questions: sinclairstockard[at]gmail.com or 
 
 ## Recent Projects
   
-* [Descrepancies in Variant Databases for BRCA1 Mutations](./variants.md)
-  
 * [Automating Pathway Analysis and Exploring Copy Number Signatures](./Pathway.md)
+
+* [Descrepancies in Variant Databases for BRCA1 Mutations](./variants.md)
 
 ## Assignments
 
