@@ -48,13 +48,13 @@ First, let's see what the data looks like.
 #### Raw Counts of Clinical Classifications Across Databases
 ![Counts](variants/overall.png "Distributions")
 
-DpSNP is the largest variant database by far. But how are the clinical classifications distributed?
+DbSNP is the largest variant database by far. But how are the clinical classifications distributed?
 
 #### Distributions of Clinical Classifications Across Databases
 ![Distributions](variants/dist_pie.png "Distributions")
 ###### See interactive version of this table in R markdown file (linked at top of page).
 
-Most of the varients in the ClinVar, DpSNP, and LOVD databases are classified as unknown. By contrast, a majority of the variants in the Utah database are classified as benign. 
+Most of the varients in the ClinVar, DbSNP, and LOVD databases are classified as unknown. By contrast, a majority of the variants in the Utah database are classified as benign. 
 
 ## Variant overlap across databases
 
