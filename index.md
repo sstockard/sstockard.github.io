@@ -21,7 +21,7 @@ Please feel free to contact me with questions: sinclairstockard[at]gmail.com or 
 
 ## Assignments
 
-* [Class Comparison of Prostate Genomic Data](./assignments/HW3.html)
+* [Statistical Modeling of Prostate Genomic Data](./assignments/HW3.html)
 
 ## Other Visualizations
 
