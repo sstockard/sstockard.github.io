@@ -100,7 +100,7 @@ This plot shows that there is fairly good agreement among variant calls across d
 ## Conclusions
 
 * There are very few common variants across databases that have clinical calls.
-* Among those with clinical calls, there is little agreement among databases.
+* Among those with clinical calls, there is some agreement among databases.
 * Lack of consistancy and availability of BRCA1 variant data could have negative impacts on patient care, so more experimental and computational work needs to be done to accurately classify BRCA1 mutations.
 
 
