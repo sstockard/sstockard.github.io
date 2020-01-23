@@ -1,0 +1,320 @@
+---
+title: "HW3"
+author: "Sinclair Stockard"
+date: "October 15, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Question 1a
+
+There are 28,947 probes.
+
+```{r}
+setwd('/Users/sincl/OneDrive/Desktop')
+
+load(file.path("ProstateData", "expression.data.rda"))
+load(file.path("ProstateData", "clinical.info.rda"))
+load(file.path("ProstateData", "gene.info.rda"))
+
+dim(expression.data)
+
+expression.data[1:5,1:5]
+
+```
+
+## Question 1b
+
+There are 10,204 unique genes.
+
+```{r}
+
+str(gene.info)
+
+```
+
+## Question 1c
+
+There are 12,248 unassociated probes.
+
+```{r}
+
+summary(gene.info)
+
+```
+
+## Question 1d
+
+There are 112 samples.
+
+```{r}
+
+dim(clinical.info)
+
+clinical.info[1:5,1:5]
+
+```
+
+## Question 1e
+
+41 samples normal (Status = N)
+62 samples tumor (Status = T)
+9 samples lymphnode metastases (Status = L)
+
+```{r}
+
+str(clinical.info)
+
+Status <- clinical.info$Status
+
+freqtable <- table(Status)
+t = as.data.frame(freqtable)
+
+t
+
+```
+## Question 2a
+
+```{r}
+T <- (which(clinical.info$Status == "T"))
+L <- (which(clinical.info$Status == "L"))
+filtdata <- expression.data[, c(T, L)]
+filtclin <- clinical.info[c(T, L),]
+filtclin$Status <- factor(filtclin$Status)
+
+```
+## Question 2b
+
+```{r}
+
+library(ClassComparison)
+mtt <- MultiTtest(filtdata, filtclin$Status)
+hist(mtt@t.statistics, breaks=100, col='skyblue')
+
+```
+
+## Question 2c
+
+```{r}
+
+hist(mtt@p.values, breaks=100, col='pink')
+
+```
+## Question 2d
+
+There are 5358 p-values < .01. This is more than what is expected by chance (0.01 * 28947 = 289.5).
+
+```{r}
+
+p.val <- mtt@p.values
+sum(p.val < 0.01)
+
+
+```
+
+## Question 2e
+
+There are 8574 p-values < .05. This is more than what is expected (1447.35).
+
+```{r}
+
+sum(p.val < 0.05)
+
+```
+
+## Question 3a
+
+```{r}
+
+bum <- Bum(mtt@p.values)
+hist(bum)
+
+```
+
+## Question 3a
+
+There are 3666 genes differentially expressed. 
+
+```{r}
+
+countSignificant(bum, alpha=0.01, by="FDR")
+
+```
+## Question 3b
+
+There are 6568 genes differentially expressed. 
+
+```{r}
+
+countSignificant(bum, alpha=0.05, by="FDR")
+
+```
+
+## Question 4a
+
+```{r}
+status <- filtclin[, "Status"]
+
+wiltest <- MultiWilcoxonTest(filtdata, status)
+
+hist(wiltest, breaks = 100, col='orange')
+```
+
+## Question 4b
+
+```{r}
+
+require(ClassComparison)
+wilc <- MultiWilcoxonTest(filtdata, status)
+
+plot(wilc, prior=c(0.30, 0.40, 0.50, .60), signif=NULL)
+
+abline(h=0)
+
+plot(wilc, prior=0.52 , ylim=c(0,1))
+abline(h=0)
+
+```
+
+## Question 4c 
+
+```{r}
+
+cutoffSignificant(wilc, prior=0.52, signif=0.9)
+
+```
+
+## Question 5a
+
+Yes, similar numbers of L samples were run on new and old chips, but far more N and T samples were run on new chips. 
+
+```{r}
+
+summary(clinical.info)
+
+newchip <- clinical.info[clinical.info$ChipType %in% c('new'),]
+
+StatusNew <- newchip$Status
+
+freqtable2 <- table(StatusNew)
+t2 = as.data.frame(freqtable2) ##Distribution of sample types for 'new' chips
+
+t2
+
+oldchip <- clinical.info[clinical.info$ChipType %in% c('old'),]
+
+StatusOld <- oldchip$Status
+
+freqtable3 <- table(StatusOld)
+t3 = as.data.frame(freqtable3) ##Distribution of sample types for 'old' chips
+
+t3
+
+```
+
+## Question 5b
+
+Chip Type seems to have more of an overall impact on data. All of the old samples are clustered together in one branch whereas status varies within branches. 
+
+```{r}
+
+expression.data2 <- as.data.frame(t(expression.data))
+
+rownames(expression.data2) = paste(rownames(expression.data2), as.character(clinical.info$ChipType))
+
+pca <- prcomp(expression.data2, scale = TRUE)
+
+clust = hclust(dist(pca$x, "euclidean"), method = "ward.D2")
+
+plot(clust, cex = .6)
+
+```
+
+## Question 6a
+
+```{r}
+
+Histology <- as.data.frame(clinical.info$Status)
+rownames(Histology) = rownames(clinical.info)
+colnames(Histology) = "Status"
+mlm <- MultiLinearModel(Y ~ Status, Histology, expression.data)
+summary(mlm)
+plot(mlm)
+ 
+```
+
+## Question 6b
+
+```{r}
+
+bummlm <- Bum(mlm@p.values)
+hist(bummlm)
+```
+
+## Question 6c
+
+8516 significant genes at 1% FDR
+12409 significnant genes at 5% FDR
+15140 significant genes at 10% FDR
+```{r}
+
+countSignificant(bummlm, alpha=0.01, by="FDR")
+
+countSignificant(bummlm, alpha=0.05, by="FDR")
+
+countSignificant(bummlm, alpha=0.10, by="FDR")
+
+```
+
+## Question 7a
+
+```{r}
+
+Components <- as.data.frame(clinical.info[,c(4,6)])
+mlm2 <- MultiLinearModel(Y ~ Status + ChipType, Components, expression.data)
+summary(mlm2)
+plot(mlm2)
+
+```
+
+```{r}
+
+anova <- anova(mlm,mlm2)
+
+summary(anova)
+
+```
+
+```{r}
+
+bummlm2 <- Bum(mlm2@p.values)
+
+countSignificant(bummlm2, alpha=0.01, by="FDR")
+```
+
+## Question 7b
+
+```{r}
+
+Chip <- as.data.frame(clinical.info$ChipType)
+rownames(Chip) = rownames(clinical.info)
+colnames(Chip) = 'ChipType'
+mlm3 <- MultiLinearModel(Y ~ ChipType, Chip, expression.data)
+summary(mlm3)
+plot(mlm3)
+```
+
+```{r}
+
+bummlm3 <- Bum(mlm3@p.values)
+
+countSignificant(bummlm3, alpha=0.01, by="FDR")
+
+```
+
+## Question 7c
+
+Chip Type is the more important factor. 
