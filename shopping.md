@@ -96,6 +96,6 @@ yearly <- ggplot(sales_trimmed, aes(x = Date, y = Weekly_Sales, colour = Dept)) 
 
 * Dept 1 has sales peaks around the New Year and early spring.
 
-* Dept 7 has random peaks throughout the year but stays mostly cosistant.
+* Dept 7 has random peaks throughout the year but stays mostly cosnistant.
 
 * Dept 11 has peaks around the Holiday Season from Thanksgiving to New Years
