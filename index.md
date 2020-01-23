@@ -11,6 +11,8 @@ I am a detail-oriented, motivated, and results-driven Research Data Analyst at T
 
 **Relevant Coursework:** Introduction to Bioinformatics, Analysis of  Large-Scale Genomic Data, Introduction to C++, SQL Fundamentals, Research and Problem Solving, Fundamentals of Grant Writing.
 
+Please feel free to contact me with questions: sinclairstockard[at]gmail.com
+
 ## Recent Projects
   
 * [Descrepancies in Variant Databases for BRCA1 Mutations](./variants.md)
@@ -25,4 +27,3 @@ I am a detail-oriented, motivated, and results-driven Research Data Analyst at T
 
 * [Exploratory Retail Insights](./shopping.md)
 
-Please feel free to contact me with questions: sinclairstockard[at]gmail.com
