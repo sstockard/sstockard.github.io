@@ -37,7 +37,7 @@ sns.set(style="whitegrid")
 g = sns.catplot(x="year", y="Weekly_Sales", hue="Dept", data=depts,
                    height=10, kind="bar", palette="Set1")
 ```
-#### Weekly Sales 2011-2013 for 3 Departments
+#### Total Yearly Sales 2011-2013 for 11 Departments
 ![Calls](shopping/11depts.png "Calls")
 
 ```python
