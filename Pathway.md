@@ -6,7 +6,7 @@ layout: default
 
 **Language:** R
 
-**Software:** GSEA
+**Concepts**: Genomics, pathway analysis, survival, clustering, data proccessing and manipulation, visualization
 
 **Codes linked below**
 
