@@ -55,7 +55,7 @@ This radar plot illustrates the associations of CNSigs with 3 different breast c
 
 ## Clustering Patients
 
-Most recently, I have tried to analyze CNSigs on a continuous scale by correlating outcomes to CNSig exposure. Previously, I tried to group patients via hierarchial clustering and testing differences between clustered cohorts. That code can be viewed [here](https://github.com/sstockard/sstockard.github.io/blob/master/Pathway/clustering.R). 
+Most recently, I have tried to analyze CNSigs on a continuous scale by correlating outcomes to CNSig exposure. Previously, I grouped patients via hierarchial clustering and tested differences between clustered cohorts. That code can be viewed [here](https://github.com/sstockard/sstockard.github.io/blob/master/Pathway/clustering.R). 
 
 ## Impacts
 
