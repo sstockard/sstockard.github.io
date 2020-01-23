@@ -6,7 +6,7 @@ layout: default
 
 **Language:** R
 
-**Topic:** Cancer genomics
+**Concepts:**: Genomics, data manipulation, merging data sources, querying, visualization
 
 **[Full code](/variants/variants.html)**
 
