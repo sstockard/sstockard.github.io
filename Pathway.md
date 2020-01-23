@@ -44,7 +44,7 @@ This plot shows CNSig exposure across 700+ breast cancer samples. CNSig exposure
 [View Code](https://github.com/sstockard/sstockard.github.io/blob/master/Pathway/survival.R)
 ![surv](/Pathway/survival.png "surv")
 
-Low quality survival data, so difficult to interpret. However it seems that Signatures 2 and 4 are associated with the worst patient survival.
+The quality fo the survival data we had was low (few events and spread apart), so survival data was difficult to interpret. However it seems that Signatures 2 and 4 are associated with the worst patient survival.
 
 #### Breast Cancer Subtype Association with Signatures
 [View Code](https://github.com/sstockard/sstockard.github.io/blob/master/Pathway/radar.R)
