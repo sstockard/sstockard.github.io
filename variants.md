@@ -60,7 +60,7 @@ Most of the varients in the ClinVar, DbSNP, and LOVD databases are classified as
 
 By looking at the [merged variant database](/variants/Merged.txt), one can see that there are hundreds of missing values (i.e. "NA"). A missing value in a column means that there is no experimental data for that variant in that particular database. 
 
-If we want to compare variant classifications across databases, we have to determine which variants are present in multiple databases. Here, we will say that we are interested variants that 3 out of 4 of the databases. 
+If we want to compare variant classifications across databases, we have to determine which variants are present in multiple databases. Here, we will say that we are interested variants that are in 3 out of 4 of the databases. 
 
 One way to do this is to set NA values to 0, and variant call values to 1. Since the mutation names are rows and the databases are columns, a row sum of 3 or above means that the variant is present in at least 3 databases.
 
