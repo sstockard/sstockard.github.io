@@ -11,7 +11,7 @@ I am a detail-oriented, motivated, and results-driven Research Data Analyst at T
 
 **Relevant Coursework:** Introduction to Bioinformatics, Analysis of  Large-Scale Genomic Data, Introduction to C++, SQL Fundamentals, Research and Problem Solving, Fundamentals of Grant Writing.
 
-Please feel free to contact me with questions: sinclairstockard[at]gmail.com
+Please feel free to contact me with questions: sinclairstockard[at]gmail.com or connect on [Linkedin].
 
 ## Recent Projects
   
@@ -25,5 +25,9 @@ Please feel free to contact me with questions: sinclairstockard[at]gmail.com
 
 ## Other Visualizations
 
-* [Exploratory Retail Insights](./shopping.md)
+* [Exploratory Retail Insights](./shopp/ing.md)
+
+## Links
+
+* [Machine learning predicts rapid relapse of triple negative breast cancer](https://www.biorxiv.org/content/10.1101/613604v1)
 
