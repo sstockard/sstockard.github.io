@@ -75,7 +75,7 @@ fit2 <- eBayes(fit)
 
 names(fit2)
 
-sig.con<- makeContrasts(Sig1-Sig2,Sig1-Sig3,Sig1-Sig4,Sig1-Sig5,Sig1-Sig6,levels=design)
+sig.con<- makeContrasts(Sig1-Sig2,levels=design)
 sig.con.fitmodel <- contrasts.fit(fit2, sig.con)
 sig.con.fitmodel.eBayes <- eBayes(sig.con.fitmodel)
 
