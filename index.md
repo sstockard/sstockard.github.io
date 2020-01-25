@@ -21,7 +21,7 @@ Please feel free to contact me with questions: sinclairstockard[at]gmail.com or 
 ## Assignments
 
 * [Statistical Modeling of Prostate Cancer Genomic Data](./assignments/HW3.html)
-* [Statistical Modeling of Breast Cancer Genomic Data](./assignments/HW2.html)
+* [Statistical Modeling of Breast Cancer Genomic Data](./assignments/HW_2.html)
 
 ## Other Visualizations
 
