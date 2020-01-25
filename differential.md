@@ -4,6 +4,7 @@ layout: default
 # Using Linear Modeling to Measure Differential Gene Expression
 
 **Language:** R
+
 **Concepts:** Cancer genomics, linear modeling
 
 [View code on Github](https://github.com/sstockard/sstockard.github.io/blob/master/linear/linear.R)
