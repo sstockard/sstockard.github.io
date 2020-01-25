@@ -6,7 +6,7 @@ layout: default
 **Language:** R
 **Concepts:** Cancer genomics, linear modeling
 
-View code on Github
+[View code on Github](https://github.com/sstockard/sstockard.github.io/blob/master/linear/linear.R)
 
 In genomics, we are often interested in the difference in gene expression between groups. This can give us an idea of underlying For my project, I was interested in gene expression differences between copy number signatures. To do this I can directly compare groups using a linear modeling package in R called limma. This pipeline returns a list of the top 1000 differentially expressed genes between two groups of signatures (Signature 1 and Signature 2).
 
@@ -88,7 +88,7 @@ fit2 <- eBayes(fit)
 
 names(fit2)
 
-sig.con<- makeContrasts(Sig1-Sig2,Sig1-Sig3,Sig1-Sig4,Sig1-Sig5,Sig1-Sig6,levels=design)
+sig.con<- makeContrasts(Sig1-Sig2,levels=design)
 sig.con.fitmodel <- contrasts.fit(fit2, sig.con)
 sig.con.fitmodel.eBayes <- eBayes(sig.con.fitmodel)
 ```
@@ -99,3 +99,4 @@ sig.con.fitmodel.eBayes <- eBayes(sig.con.fitmodel)
 genes<-as.data.frame(topTable(sig.con.fitmodel.eBayes, number =1000))
 genes
 ```
+Click [here](./linear/sig_1_2_top100.txt) to view the output.
