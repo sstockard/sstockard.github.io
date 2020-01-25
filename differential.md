@@ -99,4 +99,4 @@ sig.con.fitmodel.eBayes <- eBayes(sig.con.fitmodel)
 genes<-as.data.frame(topTable(sig.con.fitmodel.eBayes, number =1000))
 genes
 ```
-Click [here](./linear/sig_1_2_top100.txt) to view the output.
+Click [here](./linear/sig_1_2_top100.txt) to view the output. It is a large table including values such as log fold change, p-value, and average expression.
