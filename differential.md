@@ -8,7 +8,7 @@ layout: default
 
 [View code on Github](https://github.com/sstockard/sstockard.github.io/blob/master/linear/linear.R)
 
-In genomics, we are often interested in the difference in gene expression between groups. This can give us an idea of underlying For my project, I was interested in gene expression differences between copy number signatures. To do this I can directly compare groups using a linear modeling package in R called limma. This pipeline returns a list of the top 1000 differentially expressed genes between two groups of signatures (Signature 1 and Signature 2).
+In genomics, we are often interested in the difference in gene expression between groups. This can give us an idea of underlying processes driving phenotypic changes between these groups. For my project, I was interested in gene expression differences between copy number signatures. To do this I can directly compare groups using a linear modeling package in R called limma. This pipeline returns a list of the top 1000 differentially expressed genes between two groups of signatures (Signature 1 and Signature 2).
 
 ### Import Data
 ```r
