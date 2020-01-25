@@ -17,6 +17,7 @@ Please feel free to contact me with questions: sinclairstockard[at]gmail.com or 
   
 * [Automating Pathway Analysis and Exploring Copy Number Signatures](./Pathway.md)
 * [Discrepancies in Variant Databases for BRCA1 Mutations](./variants.md)
+* [Using Linear Modeling to Measure Differential Gene Expression](./differential.md)
 
 ## Assignments
 
