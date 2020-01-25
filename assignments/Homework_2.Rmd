@@ -1,0 +1,184 @@
+---
+title: "Homework 2"
+author: "Sinclair Stockard"
+date: "September 13, 2018"
+output: html_document
+---
+
+## Question 1a
+
+```{r}
+
+data_info <- (read.table('TCGA_brca_tcga_info.txt', quote = "", header=T, sep='\t'))
+
+data_rna <- (read.table('TCGA_brca_tcga_RNAseq.txt', header=T, sep='\t',row.names = 1))
+```
+
+
+## Question 1b
+
+data_info: 1003 rows, 47 cols
+data_rna: 17881 rows, 1004 cols
+
+
+```{r}
+dim(data_info)
+dim(data_rna)
+```
+
+## Question 1c
+
+Using the str command, we can see there are 1003 sample IDs for only 997 patient IDs. It is difficult to determine why some patients had multiple samples without doing further research on the barcodes for the TCGA dataset. Sample IDs from the same patient end with "01" or "06"" These differences in nomenclature represent metastatic vs primary tumor samples. 
+
+```{r}
+str(data_info)
+```
+
+## Question 1d
+
+The column names are sample IDs, as they correspond to those in the "info" dataset. The row names are names of genes. Therefore, a given column represents all gene expression data for a single sample. Rows represent expression of a single gene across all samples. 
+
+```{r}
+data_rna[1:10,1:10]
+
+```
+
+## Question 2
+
+Gene expression looks similar among samples. 
+
+```{r}
+
+data_rna <- log2(3 + data_rna)
+
+boxplot(data_rna, main = "Boxplot for RNAseq Data")
+
+```
+
+## Question 3a
+
+10.67% of the variance is explained by component 1, and 8.34% is explained by component two. Together, these component account for 19.01% of the variance. The summary only displays the first 10 components.
+
+```{r}
+
+rna_matrix <- as.matrix(data_rna)
+t_rna_matrix <- t(rna_matrix)
+t_rna_matrix <- t_rna_matrix[, apply(t_rna_matrix,2,var)!=0]
+pca_rna <- prcomp(t_rna_matrix, center = TRUE, scale. = TRUE, rank = 10)
+
+summary(pca_rna)
+
+
+plot(pca_rna, type = 'lines')
+
+```
+
+## Question 3b
+
+There plot below suggests that there are at least 2 possible subtypes of breast cancer.
+
+```{r}
+
+sim_rna <- cor(rna_matrix, method='pearson') 
+dis_rna <- (1.0 - sim_rna)
+clu_rna <- hclust(as.dist(dis_rna)) 
+plot(clu_rna, cex=0.25) 
+
+grp2_rna <- cutree(clu_rna, 2)
+
+x_t <- pca_rna$x 
+color2 <- c('pink', 'green')
+plot(x_t[,1], x_t[,2], col=color2[grp2_rna], pch=16, xlab="PC-1", ylab="PC-2") 
+text(x_t[,1], x_t[,2], cex=0.25)
+
+
+```
+
+
+## Question 4a
+
+It looks like there could be 4-6 subtypes from this cluster dendrogram.
+
+```{r}
+
+dCor <- as.dist( (1-cor(rna_matrix)/2))
+
+clu_RNA1 <- hclust(dCor, method='ward.D')
+
+plot(clu_RNA1, cex=.50)
+
+```
+
+## Question 4b
+
+
+```{r}
+
+dEuc <- dist(t(rna_matrix))
+
+clu_RNA2 <- hclust(dEuc, method='average')
+
+plot(clu_RNA2, cex=.50)
+
+```
+
+## Question 4c
+
+The first method gives more useful results. It is harder to decipher the clusters using the Euclidian/average clustering method as there are less distance between the clusters.
+
+## Question 5a
+
+```{r}
+
+geneEx <- rowMeans(rna_matrix)
+
+hist(geneEx, breaks = 60, main = "Histogram of Mean Gene Expression")
+```
+
+## Question 5b
+
+
+```{r}
+
+geneExSd <- apply(rna_matrix,1,sd)
+
+hist(geneExSd, breaks = 60, main = "Histogram of Standard Deviations for Gene Expression")
+```
+
+## Question 5c
+
+The filtered dataset has 2340 genes. The mean cut off seems reasonable for this data set as it excludes genes that are expressed at low levels while keeping those that are being decently expressed. Limiting the data to genes with a standard deviation greater than 1 allows for focus on genes that could be differentially expressed among samples. However, these cut offs are arbitrary and depend largely on the project and analysis at hand. 
+
+```{r}
+
+unfiltered <- row.names(rna_matrix)
+mean_filter <- names(geneEx[geneEx <=7])
+sd_filter <- names(geneExSd[geneExSd <=1])
+filtered <- union(mean_filter,sd_filter)
+
+final_filtered <- rna_matrix[setdiff(unfiltered,filtered),]
+
+dim(final_filtered)
+
+```
+
+## Question 5d
+
+```{r}
+
+library(ClassDiscovery)
+
+filter_matrix <- as.matrix(final_filtered)
+
+sc <- hclust(distanceMatrix(final_filtered, "pearson"),
+               method="ward.D2")
+gc <- hclust(distanceMatrix(t(final_filtered), "pearson"), 
+               method="ward.D2")
+heatmap(t(final_filtered), col=redgreen(64),
+        Rowv=as.dendrogram(sc))
+
+```
+
+##Question 6d
+
+It would be useful to have a feature to log transform data within the app based on user input. It may also be helpful for the app to generate a heatmap of the data for the unfiltered and filtered datasets.
