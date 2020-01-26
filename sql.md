@@ -20,13 +20,6 @@ Note: I first mutated the "Date" columns in each table using dyplr package in R 
 
 #### Queries
 ```
----PREVIEW TABLES
-
----FEATURES
-SELECT * 
-FROM features
-LIMIT 10
-
 ---SALES
 SELECT *
 FROM sales
@@ -53,7 +46,7 @@ GROUP BY Dept
 
 ---AVG WEEKLY DEPT SALES PER STORE TYPE
 
-SELECT s1.Type, AVG(s2.Weekly_Sales)
+SELECT s1.Type, AVG(s2.Weekly_Sales) as avg_dept_sales
 FROM stores as s1
 LEFT JOIN sales as s2
 on s1.Store = s2.Store
@@ -61,7 +54,7 @@ GROUP BY Type
 
 ---MAX DEPT SALES PER STORE TYPE
 
-SELECT s1.Type, Date, MAX(s2.Weekly_Sales)
+SELECT s1.Type, Date, MAX(s2.Weekly_Sales) as max_dept_sales
 FROM stores as s1
 LEFT JOIN sales as s2
 on s1.Store = s2.Store
@@ -69,7 +62,7 @@ GROUP BY Type
 
 ---FUEL PRICE ON MAX SALES WEEK PER STORE TYPE
 
-SELECT s1.Type, f.Date, MAX(s2.Weekly_Sales), f.Fuel_Price
+SELECT s1.Type, f.Date, MAX(s2.Weekly_Sales) as max_weekly_sales, f.Fuel_Price
 FROM stores as s1
 LEFT JOIN sales as s2
 on s1.Store = s2.Store
@@ -79,7 +72,7 @@ GROUP BY Type
 
 ---FUEL PRICE ON MIN SALES WEEK PER STORE TYPE
 
-SELECT s1.Type, f.Date, MAX(s2.Weekly_Sales), f.Fuel_Price
+SELECT s1.Type, f.Date, MAX(s2.Weekly_Sales) as max_sales, f.Fuel_Price
 FROM stores as s1
 LEFT JOIN sales as s2
 on s1.Store = s2.Store
@@ -94,7 +87,7 @@ FROM Stores
 
 ---MAX WEEKLY DEPT SALES PER STORE SIZE
 
-SELECT max(s2.Weekly_Sales), s2.Dept,
+SELECT avg(s2.Weekly_Sales) as avg_sales,
 CASE WHEN Size > 150000 THEN 'large'
 WHEN Size > 75000 THEN 'medium'
 ELSE 'small' END 
@@ -103,5 +96,6 @@ FROM stores AS s1
 INNER JOIN sales as s2
 on s1.Store = s2.Store
 GROUP BY store_size_group
+
 ```
 
