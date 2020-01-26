@@ -12,16 +12,19 @@ Data:
 
 #### Average Yearly Sales 2011-2013 for 11 Departments
 [View Python Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/barchart.py)
+
 ![Calls](shopping/11depts.png "Calls")
      
 #### Correlations Between Retail Factors
 [View Python Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/corrplot.py)
+
 ![Calls](shopping/corplot.png "Calls")
 
 ### R
 
 #### Weekly Sales 2011-2013 for 3 Departments
 [View R Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/weeklysales.R)
+
 ![Calls](shopping/yearlysales.png "Calls")
 
 * Dept 1 has sales peaks around the New Year and early spring.
