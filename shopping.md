@@ -13,25 +13,7 @@ Data:
 #### Average Yearly Sales 2011-2013 for 11 Departments
 [View Python Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/barchart.py)
 ![Calls](shopping/11depts.png "Calls")
-
-```python
-#correlations between various outcomes
-
-features=pd.read_csv("features-data-set.csv") 
-
-some = features[['Temperature','Fuel_Price','CPI','Unemployment']]
-
-corr = features.corr()
-
-mask = np.zeros_like(corr, dtype=np.bool)
-mask[np.triu_indices_from(mask)] = True
-
-f, ax = plt.subplots(figsize=(11, 9))
-cmap = sns.diverging_palette(220, 10, as_cmap=True)
-
-sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
-            square=True, linewidths=.5, cbar_kws={"shrink": .5})            
-```
+     
 #### Correlations Between Retail Factors
 [View Python Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/corrplot.py)
 ![Calls](shopping/corplot.png "Calls")
