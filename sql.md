@@ -91,7 +91,7 @@ FROM Stores
 
 ---MAX WEEKLY DEPT SALES PER STORE SIZE
 
-SELECT max(s2.Weekly_Sales), s2.Dept, store_size_group
+SELECT max(s2.Weekly_Sales), s2.Dept,
 CASE WHEN Size > 150000 THEN 'large'
 WHEN Size > 75000 THEN 'medium'
 ELSE 'small' END 
