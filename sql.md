@@ -101,7 +101,7 @@ ELSE 'small' END
 AS store_size_group
 FROM stores AS s1
 INNER JOIN sales as s2
-on s1.Store, s2.Store
+on s1.Store = s2.Store
 GROUP BY store_size_group
 ```
 
