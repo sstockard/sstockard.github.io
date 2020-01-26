@@ -14,6 +14,12 @@ Data:
 [View Python Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/barchart.py)
 
 ![Calls](shopping/11depts.png "Calls")
+
+What this figure tells us: 
+
+* There is little change in sales from year to year per department
+
+* The top selling and bottom selling departments remained as so for each year
      
 #### Correlations Between Retail Factors
 [View Python Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/corrplot.py)
@@ -26,6 +32,8 @@ Data:
 [View R Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/weeklysales.R)
 
 ![Calls](shopping/yearlysales.png "Calls")
+
+What this figure tells us: 
 
 * Dept 1 has sales peaks around the New Year and early spring.
 
