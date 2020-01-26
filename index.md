@@ -24,9 +24,10 @@ Please feel free to contact me with questions: sinclairstockard[at]gmail.com or 
 * [Statistical Modeling of Prostate Cancer Genomic Data](./assignments/HW3.html)
 * [Statistical Modeling of Breast Cancer Genomic Data](./assignments/Homework_2.html)
 
-## Other Visualizations
+## Other Sample Work:
 
-* [Exploratory Retail Insights](./shopping.md)
+* [Exploratory Retail Insights- Visualizations with Python and R](./shopping.md)
+* [Exploratory Retail Insights - Basic SQL Queries](./sql.md)
 
 ## Links
 
