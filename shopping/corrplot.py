@@ -1,3 +1,13 @@
+#import modules
+
+import os
+import pandas as pd 
+import numpy as np
+from plotnine import *
+%matplotlib inline
+import seaborn as sns
+import matplotlib.pyplot as plt
+
 features=pd.read_csv("features-data-set.csv") 
 
 some = features[['Temperature','Fuel_Price','CPI','Unemployment']]
