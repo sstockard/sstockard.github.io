@@ -6,7 +6,7 @@ layout: default
 
 ## Background 
 
-I ran basic SQL queries on the folloqing tables: 
+I ran basic SQL queries on the following tables: 
 
 [**features:**](./sql/features.txt) Store, Date, Temperature, Fuel_Price, Markdown1, Markdown2, Markdown3, Markdown4, Markdown5, CPI, Unemployment, IsHoliday
 
