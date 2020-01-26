@@ -8,11 +8,11 @@ layout: default
 
 I ran basic SQL queries on the folloqing tables: 
 
-[**features:**](./sql/features.csv) Store, Date, Temperature, Fuel_Price, Markdown1, Markdown2, Markdown3, Markdown4, Markdown5, CPI, Unemployment, IsHoliday
+[**features:**](./sql/features.txt) Store, Date, Temperature, Fuel_Price, Markdown1, Markdown2, Markdown3, Markdown4, Markdown5, CPI, Unemployment, IsHoliday
 
 [**stores:**](./sql/stores.csv) Stores, Size, Type
 
-[**sales:**](./sql/sales.csv) Store, Date, Dept, Weekly_Sales, IsHoliday
+[**sales:**](./sql/sales.txt) Store, Date, Dept, Weekly_Sales, IsHoliday
 
 Note: I first mutated the Date columns in each table using dyplr package in R so they would be the same format
 
