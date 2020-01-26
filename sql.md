@@ -20,6 +20,13 @@ Note: I first mutated the "Date" columns in each table using dyplr package in R 
 
 #### Queries
 ```
+---PREVIEW TABLES
+
+---FEATURES
+SELECT * 
+FROM features
+LIMIT 10
+
 ---SALES
 SELECT *
 FROM sales
