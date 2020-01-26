@@ -14,7 +14,7 @@ I ran basic SQL queries on the following tables:
 
 [**sales:**](./sql/sales.txt) Store, Date, Dept, Weekly_Sales, IsHoliday
 
-Note: I first mutated the Date columns in each table using dyplr package in R so they would be the same format
+Note: I first mutated the "Date" columns in each table using dyplr package in R so they would be the same format
 
 ```
 ---PREVIEW TABLES
