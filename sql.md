@@ -37,7 +37,7 @@ SELECT *
 FROM stores
 LIMIT 10
 
----AVERAGE SALES PER STORE
+---TOTAL SALES PER STORE
 
 SELECT Store, sum(Weekly_Sales) as total_store_sales
 FROM sales
