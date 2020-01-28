@@ -24,7 +24,7 @@ Please feel free to contact me with questions: sinclairstockard[at]gmail.com or 
 * [Statistical Modeling of Prostate Cancer Genomic Data](./assignments/HW3.html)
 * [Statistical Modeling of Breast Cancer Genomic Data](./assignments/Homework_2.html)
 * [Using Excel to Measure Differential Gene Expression](./assignments/HW2_Mod2.pdf)
-* [Analyzing International Debt Statistics - SQL](https://github.com/sstockard/sstockard.github.io/blob/master/sql/notebook.ipynb)
+* [Analyzing International Debt Statistics - SQL](./sql/debt.html)
 
 ## Other Sample Work:
 
