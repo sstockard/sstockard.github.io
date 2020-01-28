@@ -25,6 +25,7 @@ Please feel free to contact me with questions: sinclairstockard[at]gmail.com or 
 * [Statistical Modeling of Breast Cancer Genomic Data](./assignments/Homework_2.html)
 * [Using Excel to Measure Differential Gene Expression](./assignments/HW2_Mod2.pdf)
 * [Analyzing International Debt Statistics - SQL](./sql/debt.html)
+* [Using Machine Learning to Predict Credit Card Approvals](./assignments/cc.html)
 
 ## Other Sample Work:
 
