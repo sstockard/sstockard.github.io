@@ -81,7 +81,7 @@ rownames(finaldata) <- finaldata[,1]
 finaldata=finaldata[,-c(1)]
 ```
 
-### Fit linear Model
+### Fit linear model
 ```r
 Signature <- factor(c(rep.int(1,times=S1), rep.int(2,times=S2), rep.int(3,times=S3),rep.int(4,times=S4),rep.int(5,times=S5),rep.int(6,times=S6)))
 
