@@ -44,7 +44,7 @@ This plot shows CNSig exposure across 700+ breast cancer samples. CNSig exposure
 [View Code](https://github.com/sstockard/sstockard.github.io/blob/master/Pathway/survival.R)
 ![surv](/Pathway/survival.png "surv")
 
-The quality fo the survival data we had was low (few events and spread apart), so survival data was difficult to interpret. However it seems that Signatures 2 and 4 are associated with the worst patient survival.
+The quality for the survival data we had was low (few events and spread apart), so survival data was difficult to interpret. However it seems that Signatures 2 and 4 are associated with the worst patient survival.
 
 #### Breast Cancer Subtype Association with Signatures
 [View Code](https://github.com/sstockard/sstockard.github.io/blob/master/Pathway/radar.R)
@@ -52,6 +52,12 @@ The quality fo the survival data we had was low (few events and spread apart), s
 ![sub](/Pathway/subtype.png "sub")
 
 This radar plot illustrates the associations of CNSigs with 3 different breast cancer subtypes. Signatures S4 and S4 and associated with ER+ breast cancers and S1 and S2 are slightly more common in TNBC. 
+
+#### Correlation of Signature Exposure vs. Homologous Recombination Repear Defeciency
+[View Code](https://github.com/sstockard/sstockard.github.io/tree/master/Pathway)
+![sub](/Pathway/p1.png "sub")
+
+Sometimes DNA because damaged and needs to be repaired. The body has multiple ways to achieve this, and one way is through a process called homologous recombination repair. In breast cancer, this type of repair doesn't work properly. This is called HRD or "BRCAness." BRCAness can be measured by an H2 genomic signature. In the figure above, I correlated signature exposure with H2. Each signature has a slightly different relationship with H2. Signatures 2 and 3 are positively correlated with H2, while the others are negatively correlated.
 
 ## Clustering Patients
 
