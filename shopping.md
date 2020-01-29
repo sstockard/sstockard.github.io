@@ -14,7 +14,7 @@ Data:
 
 ### Python
 
-#### Average Yearly Sales 2011-2013 for 11 Departments
+#### Average Yearly Sales 2010-2012 for 11 Departments
 [View Python Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/barchart.py)
 
 ![Calls](shopping/11depts.png "Calls")
@@ -38,7 +38,7 @@ What this figure tells us:
 
 ### R
 
-#### Weekly Sales 2011-2013 for 3 Departments
+#### Weekly Sales 2010-2012 for 3 Departments
 [View R Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/weeklysales.R)
 
 ![Calls](shopping/yearlysales.png "Calls")
@@ -50,3 +50,14 @@ What this figure tells us:
 * Dept 4 has small peaks throughout the year and a larger peaks around the holidays.
 
 * Dept 11 has peaks around the Holiday Season from Thanksgiving to New Years
+
+#### CPI 2010-2012 for 3 Departments
+[View R Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/weeklysales.R)
+
+![Calls](shopping/cpi.png "Calls")
+
+What this figure tells us: 
+
+* While CPI follows the same trend for all departments, stores have slightly differing CPI values throughout the year, due to the prices and nature of the goods in the department
+
+* CPI increases steadily over the years, with a notably large spike around April/May 2011
