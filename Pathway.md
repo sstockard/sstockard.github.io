@@ -40,6 +40,12 @@ This is a heatmap of the enrichment scores of various gene sets. Higher enrichme
 
 This plot shows CNSig exposure across 700+ breast cancer samples. CNSig exposure is on the y-axis and tumor samples on the x-axis. Most samples are exposed to multiple CNSigs and CNSigs are fairly evenly distributed across samples.
 
+#### Percent Genome Altered
+[View Code](https://github.com/sstockard/sstockard.github.io/tree/master/Pathway/box.R)
+![sub](/Pathway/box.png "sub")
+
+This chart shows the percent of the entire genome that is affected by copy number variations. Signatures 1, 2, and 3 are characterized by high numbers of copy number variations, while Signatures 4 and 5 have lower numbers of copy number variations.
+
 #### Signature Survival Curves
 [View Code](https://github.com/sstockard/sstockard.github.io/blob/master/Pathway/survival.R)
 ![surv](/Pathway/survival.png "surv")
@@ -54,7 +60,7 @@ The quality for the survival data we had was low (few events and spread apart), 
 This radar plot illustrates the associations of CNSigs with 3 different breast cancer subtypes. Signatures S4 and S4 and associated with ER+ breast cancers and S1 and S2 are slightly more common in TNBC. 
 
 #### Correlation of Signature Exposure vs. Homologous Recombination Repear Defeciency
-[View Code](https://github.com/sstockard/sstockard.github.io/tree/master/Pathway)
+[View Code](https://github.com/sstockard/sstockard.github.io/tree/master/Pathway/H2.R)
 ![sub](/Pathway/p1.png "sub")
 
 Sometimes DNA because damaged and needs to be repaired. The body has multiple ways to achieve this, and one way is through a process called homologous recombination repair. In breast cancer, this type of repair doesn't work properly. This is called HRD or "BRCAness." BRCAness can be measured by an H2 genomic signature. In the figure above, I correlated signature exposure with H2. Each signature has a slightly different relationship with H2. Signatures 2 and 3 are positively correlated with H2, while the others are negatively correlated.
