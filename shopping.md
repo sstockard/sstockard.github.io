@@ -21,20 +21,20 @@ Data:
 
 What this figure tells us: 
 
-* There is little change in sales from year to year per department
+* There is little change in sales from year to year per department.
 
-* The top selling and bottom selling departments remained as so for each year
+* The top selling and bottom selling departments remained as so for each year.
 
-* Sales in Dept 6 and Dept 7 have steadily decreased from 2010 to 2012
+* Sales in Dept 6 and Dept 7 have steadily decreased from 2010 to 2012.
      
 #### Correlations Between Retail Factors
 [View Python Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/corrplot.py)
 
 ![Calls](shopping/corplot.png "Calls")
 
-* Positive correlation between Markdowns 1-4 and occurance of a holiday, but a very slight negative correlation between Markdown 5 and holiday occurance
+* Positive correlation between Markdowns 1-4 and occurance of a holiday, but a very slight negative correlation between Markdown 5 and holiday occurance.
 
-* While there aren't many notable correlations in this dataset, corrplots are a way to quickly visualize many possible correlations at once in exploratory analyses
+* While there aren't many notable correlations in this dataset, corrplots are a way to quickly visualize many possible correlations at once in exploratory analyses.
 
 ### R
 
@@ -49,7 +49,7 @@ What this figure tells us:
 
 * Dept 4 has small peaks throughout the year and a larger peaks around the holidays.
 
-* Dept 11 has peaks around the Holiday Season from Thanksgiving to New Years
+* Dept 11 has peaks around the Holiday Season from Thanksgiving to New Years.
 
 #### CPI 2010-2012 for 3 Departments
 [View R Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/cpi.R)
@@ -58,8 +58,8 @@ What this figure tells us:
 
 What this figure tells us: 
 
-* While CPI follows the same trend for all departments, stores have slightly differing CPI values throughout the year, due to the prices and nature of the goods in the department
+* While CPI follows the same trend for all departments, stores have slightly differing CPI values throughout the year, due to the prices and nature of the goods in the department.
 
-* CPI increases steadily over the years
+* CPI increases steadily over the years.
 
-* There is a sharp rise in CPI beginning in 2011, and a notably large peak around April/May 2011 before it falls again
+* There is a sharp rise in CPI beginning in 2011, and a notably large peak around April/May 2011 before it falls again.
