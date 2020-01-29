@@ -52,7 +52,7 @@ What this figure tells us:
 * Dept 11 has peaks around the Holiday Season from Thanksgiving to New Years
 
 #### CPI 2010-2012 for 3 Departments
-[View R Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/weeklysales.R)
+[View R Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/cpi.R)
 
 ![Calls](shopping/cpi.png "Calls")
 
