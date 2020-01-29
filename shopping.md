@@ -14,7 +14,7 @@ Data:
 
 ### Python
 
-#### Average Yearly Sales 2010-2012 for 11 Departments
+#### Average Weekly Sales 2010-2012 for 11 Departments
 [View Python Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/barchart.py)
 
 ![Calls](shopping/11depts.png "Calls")
