@@ -60,4 +60,6 @@ What this figure tells us:
 
 * While CPI follows the same trend for all departments, stores have slightly differing CPI values throughout the year, due to the prices and nature of the goods in the department
 
-* CPI increases steadily over the years, with a notably large spike around April/May 2011
+* CPI increases steadily over the years
+
+* There is a sharp rise in CPi beginning in 2011, and a notably large peak around April/May 2011 before it falls again
