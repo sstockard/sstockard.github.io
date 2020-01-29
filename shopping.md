@@ -62,4 +62,4 @@ What this figure tells us:
 
 * CPI increases steadily over the years
 
-* There is a sharp rise in CPi beginning in 2011, and a notably large peak around April/May 2011 before it falls again
+* There is a sharp rise in CPI beginning in 2011, and a notably large peak around April/May 2011 before it falls again
