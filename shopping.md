@@ -20,11 +20,17 @@ What this figure tells us:
 * There is little change in sales from year to year per department
 
 * The top selling and bottom selling departments remained as so for each year
+
+* Sales in Dept 6 and Dept 7 have steadily decreased from 2010 to 2012
      
 #### Correlations Between Retail Factors
 [View Python Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/corrplot.py)
 
 ![Calls](shopping/corplot.png "Calls")
+
+* Positive correlation between Markdowns 1-4 and occurance of a holiday, but a very slight negative correlation between Markdown 5 and holiday occurance
+
+* While there aren't many notable correlations in this dataset, corrplots are a way to quickly visualize many possible correlations at once in exploratory analyses
 
 ### R
 
