@@ -105,3 +105,11 @@ genes<-as.data.frame(topTable(sig.con.fitmodel.eBayes, number =1000))
 genes
 ```
 Click [here](./linear/sig_1_2_top100.txt) to view the output. It is a large table including values such as log fold change, p-value, and average expression.
+
+### Volcano Plot of Results
+
+[View Code](https://github.com/sstockard/sstockard.github.io/tree/master/Pathway/H2.R)
+
+![sub](/linear/volcano.png "sub")
+
+Genes colored as blue are upregulated in Sig 1 compared to Sig 5 with a logFC > 1. Genes colored in red are downregulated with a logFC of < -1. Green spots are genes that are significantly different between genes but don't reach the -1 or +1 logFC threshold.
