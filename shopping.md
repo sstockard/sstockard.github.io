@@ -8,7 +8,7 @@ layout: default
 
 In both data science and business settings, data visualization is critical for understanding underlying data structure and making accurate predictions. Using computational methods, data visualization can occur quickly-- even when using large data sources. There are many examples of scientific data visualzations on my portfolio. Below are a few examples of data visualzations in R and Python using a sample retail dataset.
 
-Data: 
+**Data:** 
 * [Store Features](./shopping/features-data-set.csv)
 * [Store Sales](./shopping/sales-data-set.csv)
 
