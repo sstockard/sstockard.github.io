@@ -14,7 +14,14 @@ Data:
 
 ### Python
 
-#### Average Weekly Sales 2010-2012 for 11 Departments
+### Average Weekly Department Sales for 2010-2012
+
+[View Python Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/sales2.py)
+
+![Calls](shopping/sales.png "Calls")
+
+
+#### Average Weekly Deptartment Sales 2010-2012 for 11 Departments By Year
 [View Python Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/barchart.py)
 
 ![Calls](shopping/11depts.png "Calls")
@@ -26,6 +33,13 @@ What this figure tells us:
 * The top selling and bottom selling departments remained as so for each year.
 
 * Sales in Dept 6 and Dept 7 have steadily decreased from 2010 to 2012.
+
+### Store Size per Store Type
+
+[View Python Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/size.py)
+
+![Calls](shopping/size.png "Calls")
+
      
 #### Correlations Between Retail Factors
 [View Python Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/corrplot.py)
