@@ -30,7 +30,8 @@ Please feel free to contact me with questions: sinclairstockard[at]gmail.com or 
 ## Other Sample Work:
 
 * [Exploratory Retail Insights- Visualizations with Python and R](./shopping.md)
-* [Exploratory Retail Insights - Basic SQL Queries](./sql.md)
+* [Exploratory Retail Insights - Basic SQL Queries and Joins](./sql.md)
+* [Analyzing Factbook Data Using SQL and Python](.assignments/FactbookPy.html)
 
 ## Links
 
