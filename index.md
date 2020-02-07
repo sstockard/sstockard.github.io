@@ -32,7 +32,7 @@ Please feel free to contact me with questions: sinclairstockard[at]gmail.com or 
 * [Exploratory Retail Insights- Visualizations with Python and R](./shopping.md)
 * [Exploratory Retail Insights - Basic SQL Queries and Joins](./sql.md)
 * [Analyzing Factbook Data Using SQL and Python](/assignments/FactbookPy.html)
-* [Sample Store Tableu Dashboard](./Tableau.md)
+* [Sample Store Tableau Dashboard](./Tableau.md)
 
 ## Links
 
