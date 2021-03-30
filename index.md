@@ -15,11 +15,11 @@ Previously, I was a Research Data Analyst at The Ohio State University, where my
 
 **Technical Skills:** 
 
-_Programming_: I most commonly program in R and SQL, but am proficient in Splunk SPL, Python, C++, and SAS. 
+_Programming_: R and SQL, Splunk SPL, Python, C++, and SAS. 
 
-_Software_: I have experience with statistical software SPSS and JMP. I am also an experienced Git user.
+_Software_: SPSS, JMP, Git
 
-_Databases_: I have worked with data within Splunk, AWS Athena, AWS Redshift, Oracle, Teradata, IBM DB2, and Microsoft SQL Server enviornments.
+_Databases_: Splunk, AWS Athena, AWS Redshift, Oracle, Teradata, IBM DB2, and Microsoft SQL Server enviornments
 
 **Relevant Coursework:** Introduction to Bioinformatics, Analysis of  Large-Scale Genomic Data, Introduction to C++, SQL Fundamentals, Research and Problem Solving, Fundamentals of Grant Writing.
 
