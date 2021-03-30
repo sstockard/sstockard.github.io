@@ -13,13 +13,13 @@ I am a detail-oriented, motivated, and results-driven Data Analyst at Nationwide
 
 Previously, I was a Research Data Analyst at The Ohio State University, where my research involved using computational methods to analyze large scale genomic data in breast cancer, applying analytical methods that are relevant to many fields. These methods include many advanced (PCA, NMF, machine learning) and basic (t-test, ANOVA, logistic regression) statistical analyses.
 
-**Technical Skills:** 
+**Technical Skills:**  
 
-_Programming_: R and SQL, Splunk SPL, Python, C++, and SAS. 
+_**Programming:**_ R SQL, Splunk SPL, Python, C++, and SAS. 
 
-_Software_: SPSS, JMP, Git
+_**Software**_: SPSS, JMP, Git
 
-_Databases_: Splunk, AWS Athena, AWS Redshift, Oracle, Teradata, IBM DB2, and Microsoft SQL Server enviornments
+_**Databases**_: Splunk, AWS Athena, AWS Redshift, Oracle, Teradata, IBM DB2, and Microsoft SQL Server enviornments
 
 **Relevant Coursework:** Introduction to Bioinformatics, Analysis of  Large-Scale Genomic Data, Introduction to C++, SQL Fundamentals, Research and Problem Solving, Fundamentals of Grant Writing.
 
