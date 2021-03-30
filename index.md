@@ -5,13 +5,17 @@ layout: default
 
 ## About Me
 
-I am a detail-oriented, motivated, and results-driven Research Data Analyst at The Ohio State University. My current research involves using computational methods to analyze large scale genomic data in breast cancer, applying analytical methods that are relevant to many fields.
+I am a detail-oriented, motivated, and results-driven Data Analyst at Nationwide Insurance. 
 
-**Technical Skills:** I most commonly program in R, but am proficient in Python, C++, SQL. I am also familiar with statistical software SPSS and JMP.
+Previously, I was a Research Data Analyst at The Ohio State University, where my research involved using computational methods to analyze large scale genomic data in breast cancer, applying analytical methods that are relevant to many fields. These methods include machine learning as well as many advanced (PCA, NMF, machine learning) and basic (t-test, ANOVA, logistic regression) statistical methods.
+
+**Technical Skills:** I most commonly program in R and SQL, but am proficient in Python, C++, and SAS. I am also familiar with statistical software SPSS and JMP.
 
 **Relevant Coursework:** Introduction to Bioinformatics, Analysis of  Large-Scale Genomic Data, Introduction to C++, SQL Fundamentals, Research and Problem Solving, Fundamentals of Grant Writing.
 
 Please feel free to contact me with questions: sinclairstockard[at]gmail.com or connect on [Linkedin](https://www.linkedin.com/in/sturners/).
+
+**Below is some sample work from my time at OSU. Please contact me personally for samples of my work at Nationwide.**
 
 ## Recent Projects
   
