@@ -9,6 +9,8 @@ layout: default
 
 I am a detail-oriented, motivated, and results-driven Data Analyst at Nationwide Insurance. My role involves in depth processing and analysis of Telematics data. I use various SQL dialects to build and execute complex queries, and utilize R for process automation, data wrangling, and data visualization. In addition, I use Tableau and Excel to display and communicate data in a concise, interactive format.
 
+Internal GitHub (Nationwide associates only: https://github.nwie.net/Nationwide/Telematics-PL-Product-Development/
+
 **Previous Experience:**
 
 Previously, I was a Research Data Analyst at The Ohio State University, where my research involved using computational methods to analyze large scale genomic data in breast cancer, applying analytical methods that are relevant to many fields. These methods include many advanced (PCA, NMF, machine learning) and basic (t-test, ANOVA, logistic regression) statistical analyses.
@@ -25,7 +27,7 @@ _**Databases**_: Splunk, AWS Athena, AWS Redshift, Oracle, Teradata, IBM DB2, an
 
 Please feel free to contact me with questions: sinclairstockard[at]gmail.com or connect on [Linkedin](https://www.linkedin.com/in/sturners/).
 
-**Below is some sample work from my time at OSU. Please contact me personally for samples of my work at Nationwide.**
+**Below is some sample work from my time at OSU. Please contact me personally for samples of my work at Nationwide. Or, nationwide associates can view some sample queries [here](https://github.nwie.net/Nationwide/Telematics-PL-Product-Development/).**
 
 ## Recent Projects
   
