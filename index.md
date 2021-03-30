@@ -5,11 +5,17 @@ layout: default
 
 ## About Me
 
-I am a detail-oriented, motivated, and results-driven Data Analyst at Nationwide Insurance. 
+I am a detail-oriented, motivated, and results-driven Data Analyst at Nationwide Insurance. My role involves in depth processing and analysis of Telematics data. I use various SQL dialects to build and execute complex queries, and utilize R for process automation, data wrangling, and data visualization. I use Tableau to display and communicate data in a concise, interactive dashboard format.
 
-Previously, I was a Research Data Analyst at The Ohio State University, where my research involved using computational methods to analyze large scale genomic data in breast cancer, applying analytical methods that are relevant to many fields. These methods include machine learning as well as many advanced (PCA, NMF, machine learning) and basic (t-test, ANOVA, logistic regression) statistical methods.
+Previously, I was a Research Data Analyst at The Ohio State University, where my research involved using computational methods to analyze large scale genomic data in breast cancer, applying analytical methods that are relevant to many fields. These methods include many advanced (PCA, NMF, machine learning) and basic (t-test, ANOVA, logistic regression) statistical analyses.
 
-**Technical Skills:** I most commonly program in R and SQL, but am proficient in Python, C++, and SAS. I am also familiar with statistical software SPSS and JMP.
+**Technical Skills:** 
+
+_Programming_: I most commonly program in R and SQL, but am proficient in Splunk SPL, Python, C++, and SAS. 
+
+_Software_: I have experience with statistical software SPSS and JMP. I am also an experienced Git user.
+
+_Databases_: I have worked with data within Splunk, AWS Athena, AWS Redshift, Oracle, Teradata, IBM DB2, and Microsoft SQL Server enviornments.
 
 **Relevant Coursework:** Introduction to Bioinformatics, Analysis of  Large-Scale Genomic Data, Introduction to C++, SQL Fundamentals, Research and Problem Solving, Fundamentals of Grant Writing.
 
