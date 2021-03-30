@@ -45,6 +45,10 @@ What this figure tells us:
 
 ![Calls](shopping/size.png "Calls")
 
+* Store size for store types A and B are extremely variable.
+* Store size for store type C are very consistently around 4500 square feet.
+* Store sizes that are 0 are likely a defect (Potentially closed stores?).
+
      
 #### Correlations Between Retail Factors
 [View Python Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/corrplot.py)
