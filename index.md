@@ -7,7 +7,7 @@ layout: default
 
 **Current Work:**
 
-I am a detail-oriented, motivated, and results-driven Data Analyst at Nationwide Insurance. My role involves in depth processing and analysis of Telematics data. I use various SQL dialects to build and execute complex queries, and utilize R for process automation, data wrangling, and data visualization. In additional, I use Tableau to display and communicate data in a concise, interactive dashboard format.
+I am a detail-oriented, motivated, and results-driven Data Analyst at Nationwide Insurance. My role involves in depth processing and analysis of Telematics data. I use various SQL dialects to build and execute complex queries, and utilize R for process automation, data wrangling, and data visualization. In addition, I use Tableau and Excel to display and communicate data in a concise, interactive format.
 
 **Previous Experience:**
 
@@ -17,7 +17,7 @@ Previously, I was a Research Data Analyst at The Ohio State University, where my
 
 _**Programming:**_ R SQL, Splunk SPL, Python, C++, and SAS. 
 
-_**Software**_: SPSS, JMP, Git
+_**Software**_: SPSS, JMP, Git, Microsoft Excel
 
 _**Databases**_: Splunk, AWS Athena, AWS Redshift, Oracle, Teradata, IBM DB2, and Microsoft SQL Server enviornments
 
@@ -37,7 +37,6 @@ Please feel free to contact me with questions: sinclairstockard[at]gmail.com or 
 
 * [Statistical Modeling of Prostate Cancer Genomic Data - R](./assignments/HW3.html)
 * [Statistical Modeling of Breast Cancer Genomic Data - R](./assignments/Homework_2.html)
-* [Analyzing International Debt Statistics - SQL](./sql/debt.html)
 * [Using Machine Learning to Predict Credit Card Approvals - Python](./assignments/cc.html)
 * [Using Excel to Measure Differential Gene Expression](./assignments/HW2_Mod2.pdf)
 
