@@ -37,15 +37,11 @@ Please feel free to contact me with questions: sinclairstockard[at]gmail.com or 
 
 * [Statistical Modeling of Prostate Cancer Genomic Data - R](./assignments/HW3.html)
 * [Statistical Modeling of Breast Cancer Genomic Data - R](./assignments/Homework_2.html)
-* [Using Machine Learning to Predict Credit Card Approvals - Python](./assignments/cc.html)
 * [Using Excel to Measure Differential Gene Expression](./assignments/HW2_Mod2.pdf)
 
 ## Other Sample Work:
 
 * [Exploratory Retail Insights- Visualizations with Python and R](./shopping.md)
-* [Exploratory Retail Insights - Basic SQL Queries and Joins](./sql.md)
-* [Analyzing Factbook Data Using SQL and Python](/assignments/FactbookPy.html)
-* [Sample Store Tableau Dashboard](./Tableau.md)
 
 ## Links
 
