@@ -5,7 +5,11 @@ layout: default
 
 ## About Me
 
-I am a detail-oriented, motivated, and results-driven Data Analyst at Nationwide Insurance. My role involves in depth processing and analysis of Telematics data. I use various SQL dialects to build and execute complex queries, and utilize R for process automation, data wrangling, and data visualization. I use Tableau to display and communicate data in a concise, interactive dashboard format.
+**Current Work**
+
+I am a detail-oriented, motivated, and results-driven Data Analyst at Nationwide Insurance. My role involves in depth processing and analysis of Telematics data. I use various SQL dialects to build and execute complex queries, and utilize R for process automation, data wrangling, and data visualization. In additional, I use Tableau to display and communicate data in a concise, interactive dashboard format.
+
+**Before Nationwide:**
 
 Previously, I was a Research Data Analyst at The Ohio State University, where my research involved using computational methods to analyze large scale genomic data in breast cancer, applying analytical methods that are relevant to many fields. These methods include many advanced (PCA, NMF, machine learning) and basic (t-test, ANOVA, logistic regression) statistical analyses.
 
