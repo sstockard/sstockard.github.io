@@ -20,6 +20,11 @@ In both data science and business settings, data visualization is critical for u
 
 ![Calls](shopping/sales.png "Calls")
 
+What this figure tells us: 
+
+* Dept 2 had the highest weekly sales during this time period, with a range of about $40-50k in sales per week and little volatality. This Dept may contain products that have little seasonality (food items).
+
+* Weekly sales are most volatile for Dept 9. This Dept likely has products with more seasonality (clothing). 
 
 #### Average Weekly Deptartment Sales 2010-2012 for 11 Departments By Year
 [View Python Code](https://github.com/sstockard/sstockard.github.io/blob/master/shopping/barchart.py)
