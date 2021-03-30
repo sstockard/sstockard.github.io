@@ -25,7 +25,7 @@ _**Databases**_: Splunk, AWS Athena, AWS Redshift, Oracle, Teradata, IBM DB2, an
 
 Please feel free to contact me with questions: sinclairstockard[at]gmail.com or connect on [Linkedin](https://www.linkedin.com/in/sturners/).
 
-**Below is some sample work from my time at OSU. Please contact me personally for samples of my work at Nationwide. Or, nationwide associates can view some sample queries [here](https://github.nwie.net/Nationwide/Telematics-PL-Product-Development/).**
+**Below is some sample work from my time at OSU. Due to data sensitivity, please contact me personally for samples of my work at Nationwide. Or, Nationwide associates can view some sample queries [here](https://github.nwie.net/Nationwide/Telematics-PL-Product-Development/).**
 
 ## Recent Projects
   
