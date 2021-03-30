@@ -9,7 +9,7 @@ layout: default
 
 I am a detail-oriented, motivated, and results-driven Data Analyst at Nationwide Insurance. My role involves in depth processing and analysis of Telematics data. I use various SQL dialects to build and execute complex queries, and utilize R for process automation, data wrangling, and data visualization. In addition, I use Tableau and Excel to display and communicate data in a concise, interactive format.
 
-Internal GitHub (Nationwide associates only: https://github.nwie.net/Nationwide/Telematics-PL-Product-Development/
+GitHub (Nationwide associates only): https://github.nwie.net/Nationwide/Telematics-PL-Product-Development/
 
 **Previous Experience:**
 
