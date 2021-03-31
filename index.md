@@ -15,7 +15,7 @@ Previously, I was a Research Data Analyst at The Ohio State University, where my
 
 **Technical Skills:**  
 
-_**Programming:**_ R SQL, Splunk SPL, Python, C++, and SAS. 
+_**Programming:**_ R, SQL, Splunk SPL, Python, C++, and SAS. 
 
 _**Software**_: SPSS, JMP, Git, Microsoft Excel
 
