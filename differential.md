@@ -108,8 +108,6 @@ Click [here](./linear/sig_1_2_top100.txt) to view the output. It is a large tabl
 
 ### Volcano Plot of Results
 
-[View Code](https://github.com/sstockard/sstockard.github.io/tree/master/Pathway/H2.R)
-
 ![sub](/linear/volcano.png "sub")
 
 I repeated the analysis with Sig 1 and Sig 5 and visualized the results. Genes colored as blue are upregulated in Sig 1 compared to Sig 5 with a logFC > 1. Genes colored in red are downregulated with a logFC of < -1. Green spots are genes that are significantly different between genes but don't reach the -1 or +1 logFC threshold.
