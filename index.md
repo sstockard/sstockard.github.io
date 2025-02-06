@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## About Me | Sinclair Stockard
+## About Me
 
 ![1738727900690 small](https://github.com/user-attachments/assets/c3ab1a9e-c99e-4020-ab1d-e71efef491b2)
 
