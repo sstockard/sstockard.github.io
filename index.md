@@ -3,7 +3,7 @@ layout: default
 ---
 # Sinclair Stockard | Data Professional
 
-[<img src="https://i.imgur.com/98i9o14.jpeg" width=25% height=25%>]
+![1738727900690 small](https://github.com/user-attachments/assets/c3ab1a9e-c99e-4020-ab1d-e71efef491b2)
 
 ## About Me
 
@@ -33,9 +33,9 @@ _**Analytics**_: Statistical Analysis, Machine Learning, R Programming
 
 My work at Nationwide and Abercrombie & Fitch are confidential and not able to be published. I have included some older projects below, but am happy to discuss my more recent experiences. Please feel free to contact me with questions: sinclairstockard[at]gmail.com or connect on [Linkedin](https://www.linkedin.com/in/sturners/).
 
-# Current Resume
+## Current Resume
 
-* [Sinclair Stockard](./resume/
+* [Sinclair Stockard Resume 2025](./resume/sts_resume.pdf)
 
 ## Statistical Projects
 
