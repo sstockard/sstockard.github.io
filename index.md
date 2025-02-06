@@ -35,7 +35,7 @@ My work at Nationwide and Abercrombie & Fitch are confidential and not able to b
 
 ## Statistical Projects
 
-* [Discrepancies in Variant Databases for BRCA1 Mutations](./Pathway.md)
+* [Automating Pathway Analysis and Exploring Copy Number Signatures](./Pathway.md)
 * [Discrepancies in Variant Databases for BRCA1 Mutations](./variants.md)
 * [Using Linear Modeling to Measure Differential Gene Expression](./differential.md)
 
