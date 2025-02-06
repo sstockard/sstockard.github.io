@@ -3,7 +3,7 @@ layout: default
 ---
 # Sinclair Stockard | Data Professional
 
-<img src="https://i.imgur.com/98i9o14.jpeg" width=25% height=25%>
+<html><img src="https://i.imgur.com/98i9o14.jpeg" width=25% height=25%></html>
 
 ## About Me
 
@@ -32,6 +32,10 @@ _**Analytics**_: Statistical Analysis, Machine Learning, R Programming
 **Relevant Coursework:** Introduction to Bioinformatics, Analysis of  Large-Scale Genomic Data, Introduction to C++, SQL Fundamentals, Research and Problem Solving, Fundamentals of Grant Writing.
 
 My work at Nationwide and Abercrombie & Fitch are confidential and not able to be published. I have included some older projects below, but am happy to discuss my more recent experiences. Please feel free to contact me with questions: sinclairstockard[at]gmail.com or connect on [Linkedin](https://www.linkedin.com/in/sturners/).
+
+# Current Resume
+
+* [Sinclair Stockard](./resume/
 
 ## Statistical Projects
 
