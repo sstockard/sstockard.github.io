@@ -17,21 +17,23 @@ I'm passionate about solving complex problems through data and continue to explo
 
 **Technical Skills:**  
 
-_**Programming:**_ R, SQL, Splunk SPL, Python, C++, and SAS. 
+_**Data Engineering**_: Python, PySpark, SQL, ETL Pipeline Design, Data Modeling, Databricks
 
-_**Software**_: SPSS, JMP, Git, Microsoft Excel
+_**Cloud & Databases:**_ Azure (Certified), AWS (Athena, Redshift, S3), Snowflake, Oracle, Teradata
 
-_**Databases**_: Splunk, AWS Athena, AWS Redshift, Oracle, Teradata, IBM DB2, and Microsoft SQL Server enviornments
+_**Business Intelligence**_: Power BI, Tableau, Data Visualization
+
+_**Development Tools**_: Git, Azure Data Factory, PowerShell, Shell Scripting
+
+_**Analytics**_: Statistical Analysis, Machine Learning, R Programming
 
 **Relevant Coursework:** Introduction to Bioinformatics, Analysis of  Large-Scale Genomic Data, Introduction to C++, SQL Fundamentals, Research and Problem Solving, Fundamentals of Grant Writing.
 
 Please feel free to contact me with questions: sinclairstockard[at]gmail.com or connect on [Linkedin](https://www.linkedin.com/in/sturners/).
 
-**Below is some sample work from my time at OSU. Due to data sensitivity, please contact me personally for samples of my work at Nationwide. Or, Nationwide associates can view some sample queries [here](https://github.nwie.net/Nationwide/Telematics-PL-Product-Development/).**
 
 ## Recent Projects
-  
-* [Automating Pathway Analysis and Exploring Copy Number Signatures](./Pathway.md)
+
 * [Discrepancies in Variant Databases for BRCA1 Mutations](./variants.md)
 * [Using Linear Modeling to Measure Differential Gene Expression](./differential.md)
 
