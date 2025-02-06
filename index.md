@@ -1,11 +1,10 @@
 ---
 layout: default
 ---
-# Sinclair Stockard | Data Professional
 
 ![1738727900690 small](https://github.com/user-attachments/assets/c3ab1a9e-c99e-4020-ab1d-e71efef491b2)
 
-## About Me
+## About Me | Sinclair Stockard
 
 Although I've taken a non-traditional path to becoming a data professional, my diverse experiences make me a versatile candidate across industries. At Penn State University, where I graduated in 2018, my Kinesiology studies and biomedical research sparked my passion for data analytics. My undergraduate thesis on exercise physiology introduced me to statistical analysis and cultivated my analytical mindset.
 
