@@ -3,7 +3,7 @@ layout: default
 ---
 # Sinclair Stockard | Data Professional
 
-![image](https://github.com/user-attachments/assets/3c02b994-234d-43a1-a921-5801b88f9781)
+<a href="url"><img src="[http://url.to/image.png](https://github.com/user-attachments/assets/3c02b994-234d-43a1-a921-5801b88f9781)" align="left" height="48" width="48" ></a>
 
 ## About Me
 
