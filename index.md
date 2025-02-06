@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-#Sinclair Stockard | Data Professional
+# Sinclair Stockard | Data Professional
 
 ## About Me
 
