@@ -5,13 +5,15 @@ layout: default
 
 ## About Me
 
-**Current Work:**
+Although I've taken a non-traditional path to becoming a data professional, my diverse experiences make me a versatile candidate across industries. At Penn State University, where I graduated in 2018, my Kinesiology studies and biomedical research sparked my passion for data analytics. My undergraduate thesis on exercise physiology introduced me to statistical analysis and cultivated my analytical mindset.
 
-I am a detail-oriented, motivated, and results-driven Data Analyst at Nationwide Insurance. My role involves in depth processing and analysis of Telematics data. I use various SQL dialects to build and execute complex queries, and utilize R for process automation, data wrangling, and data visualization. In addition, I use Tableau and Excel to display and communicate data in a concise, interactive format.
+As a Research Data Analyst at Ohio State University, I applied computational methods to analyze genomic data in breast cancer research. This work involved advanced statistical techniques like PCA, NMF, and machine learning, alongside fundamental statistical analyses. My research was published in BMC Cancer, demonstrating my ability to derive meaningful insights from complex datasets.
 
-**Previous Experience:**
+Seeking industry experience, I joined Nationwide Insurance as a Business Insights Engineer, specializing in telematics data analysis. I developed expertise in SQL, R programming, and visualization tools like Tableau, while automating processes and building interactive dashboards. This role evolved into an Analytics Engineer position, where I built ML model monitoring frameworks and analytical solutions for insurance products.
 
-Previously, I was a Research Data Analyst at The Ohio State University, where my research involved using computational methods to analyze large scale genomic data in breast cancer, applying analytical methods that are relevant to many fields. These methods include many advanced (PCA, NMF, machine learning) and basic (t-test, ANOVA, logistic regression) statistical analyses.
+Currently, as a Senior Analytics Engineer at Abercrombie & Fitch, I lead data engineering initiatives for People Analytics. I architect ETL pipelines using modern tools like Databricks and Snowflake, implement data quality frameworks, and drive cloud migration efforts. My experience spans healthcare, insurance, and retail industries, combining technical expertise with business acumen to deliver impactful data solutions.
+
+I'm passionate about solving complex problems through data and continue to explore new technologies and methodologies in this rapidly evolving field.
 
 **Technical Skills:**  
 
