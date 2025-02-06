@@ -3,7 +3,7 @@ layout: default
 ---
 # Sinclair Stockard | Data Professional
 
-![1738727900690](https://tinypic.host/images/2025/02/06/1738727900690.jpg)
+<img src="https://i.imgur.com/98i9o14.jpeg" width=25% height=25%>
 
 ## About Me
 
@@ -31,10 +31,11 @@ _**Analytics**_: Statistical Analysis, Machine Learning, R Programming
 
 **Relevant Coursework:** Introduction to Bioinformatics, Analysis of  Large-Scale Genomic Data, Introduction to C++, SQL Fundamentals, Research and Problem Solving, Fundamentals of Grant Writing.
 
-My work at Nationwide and Abercrombie & Fitch are confidential and not able to be published. I have included some personal projects below, but am happy to discuss my experiences.Please feel free to contact me with questions: sinclairstockard[at]gmail.com or connect on [Linkedin](https://www.linkedin.com/in/sturners/).
+My work at Nationwide and Abercrombie & Fitch are confidential and not able to be published. I have included some older projects below, but am happy to discuss my more recent experiences. Please feel free to contact me with questions: sinclairstockard[at]gmail.com or connect on [Linkedin](https://www.linkedin.com/in/sturners/).
 
-## Recent Projects
+## Statistical Projects
 
+* [Discrepancies in Variant Databases for BRCA1 Mutations](./Pathway.md)
 * [Discrepancies in Variant Databases for BRCA1 Mutations](./variants.md)
 * [Using Linear Modeling to Measure Differential Gene Expression](./differential.md)
 
