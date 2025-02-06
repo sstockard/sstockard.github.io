@@ -3,7 +3,7 @@ layout: default
 ---
 # Sinclair Stockard | Data Professional
 
-<html><img src="https://i.imgur.com/98i9o14.jpeg" width=25% height=25%></html>
+[<img src="https://i.imgur.com/98i9o14.jpeg" width=25% height=25%>]
 
 ## About Me
 
